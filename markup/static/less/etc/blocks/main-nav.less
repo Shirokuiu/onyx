@@ -1,9 +1,37 @@
 .main-nav__list {
+  .reset();
+  
+  display: flex;
+  
   list-style: none;
+  &--case {
+    .main-nav__item {
+      display: block;
+      
+      line-height: 21px;
+      color: #000000;
+      
+      border-bottom: 1px solid transparent;
+      &--active-case {
+        color: #0829cc;
+        
+        border-bottom: 1px solid #0829cc;
+      }
+    }
+  }
 }
 
 .main-nav__items {
+  margin-right: 120px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav__item {
   font-size: 14px;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
 }

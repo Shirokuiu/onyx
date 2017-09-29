@@ -6,7 +6,25 @@
   <body class="page">
     %=symbols=%
     <div class="page__wrapper">
-      <header class="page-header"></header>
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__blockDescription-rowTop">
+            <div class="logo">
+              <img src="%=static=%img/content/logo-img.svg" alt="Логотип" width="170" height="65">
+            </div>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__items"><a href="#" class="main-nav__item">Услуги</a></li>
+                <li class="main-nav__items"><a href="#" class="main-nav__item">Работы</a></li>
+                <li class="main-nav__items"><a href="#" class="main-nav__item">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="services">
+            <a href="#" class="services__link services__link--case">Подпишись</a>  
+          </div>
+        </div>
+      </header>
       <main class="page-content"></main>
       <footer class="page-footer"></footer>
     </div>
@@ -15,6 +33,7 @@
     <script>svg4everybody();</script>
 
     <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
   </body>
 </html>
