@@ -25,8 +25,6 @@
 
    
 .page-header__blockDescription-rowTop {
-  
-  
   display: flex;
   align-items: center;
   
@@ -84,11 +82,25 @@
 }
   
 .page_header__scroll {
+  position: relative;
+  
+  margin-bottom: 57px;
+  padding-top: 68px;
+  
   text-align: center;
   font-size: 14px;
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 7px;
+    left: 49.9%;
+    
+    .bg-svg(@scroll-icon);
+  }
 }
 
 .page-header__caseDescriptionHead {
@@ -99,7 +111,7 @@
 }
 
 .page-header__caseDescriptionHead-block {
-  width: 396px;
+  width: 397px;
   &--text {
     width: 570px;
   }
@@ -114,9 +126,23 @@
   line-height: 55px;
   color: #000000;
   text-decoration: none;
+  &--portfolio {
+    margin-bottom: 21px;
+    
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  &--pageDesign {
+    margin-bottom: 21px;
+    
+    font-size: 40px;
+  }
 }
 
 .page-header__caseDescriptionHead-border {
+  width: 393px;
   height: 1px;
   margin-bottom: 9px;
   
@@ -134,9 +160,7 @@
 
 .page-header__caseDescriptionHead-items {
   margin-right: 36px;
-}
-
-.page-header__caseDescriptionHead-item {
+  
   font-size: 18px;
   line-height: 35px;
   font-weight: 700;

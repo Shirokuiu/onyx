@@ -29,6 +29,11 @@
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+  &--scroll {
+    color: #0829cc;
+    
+    border-color: #0829cc;
+  }
   &--case {
     color: #0829cc;
     
@@ -46,33 +51,54 @@
 
 .services__socialLink {
   position: relative;
-  margin-left: auto;
+  
   display: block;
   width: 32px;
   height: 32px;
+  margin-left: auto;
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
   }
   &::before {
     content: "";
-    .bg-svg(@socialLink1);
+    
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    
     margin: auto;
   }
-  
-  &--fb {
+  &--in {
     &::before {
-      .bg-svg(@socialLink2);
+      .bg-svg(@in);
     }
   }
-  &--tw {
+  &--inst {
     &::before {
-      .bg-svg(@socialLink3);
+      .bg-svg(@inst);
+    }
+  }
+  &--fb {
+    &::before {
+      .bg-svg(@fb);
+    }
+  }
+  &--fbScroll {
+    &::before {
+      .bg-svg(@fb-scroll);
+    }
+  }
+  &--instScroll {
+    &::before {
+      .bg-svg(@inst-scroll);
+    }
+  }
+  &--inScroll {
+    &::before {
+      .bg-svg(@in-scroll);
     }
   }
 }
