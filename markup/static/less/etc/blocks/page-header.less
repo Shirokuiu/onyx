@@ -27,6 +27,26 @@
   }
 }
 
+.footer-nav {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  .logo {
+      a {
+        width: 170px !important;
+        height: 65px !important;
+        background-image: url(%=static=%content/logo-img.svg) !important;
+      }
+    }
+  .main-nav__item {
+    color: #ffffff !important;
+  }
+  .page-header__subscribe-link {
+    color: #ffffff !important;
+    
+    border-color: #ffffff !important;
+  }
+}
+
 .page-header__blockDescription-rowTop {
   &--fixed {
     position: fixed;
@@ -58,6 +78,9 @@
     }
     .main-nav__item {
       color: #000000;
+      &.mPS2id-highlight {
+        color: red;
+      }
     }
     .page-header__subscribe-link {
       color: #000000;
