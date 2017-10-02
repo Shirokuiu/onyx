@@ -6,6 +6,8 @@
   
   background-color: #0829cc;
   .container {
+    position: relative;
+    
     display: flex;
     flex-direction: column;
     padding-top: 61px;
@@ -23,13 +25,80 @@
       margin-bottom: 168px;
     }
   }
- 
+}
+
+.page-header__blockDescription-rowTop {
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
+      
+    box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.03);    
+    background-color: #fff;
+    
+    transition: 0.5s ease;
+    .page-header__blockDescription-rowTop-wrap {
+      width: 1260px;
+      margin: 0 auto;
+    }
+    .logo {
+      a {
+        width: 110px;
+        height: 42px;
+        background-image: url(%=static=%content/logo-case-img.svg);
+      }
+    }
+    .main-nav__item {
+      color: #000000;
+    }
+    .page-header__subscribe-link {
+      color: #000000;
+      
+      border-color: #000000;
+    }
+  }
 }
    
-.page-header__blockDescription-rowTop {
+.page-header__blockDescription-rowTop-wrap {
   display: flex;
   align-items: center;
-  
+  justify-content: space-between;
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    
+    background-color: #fff;
+    .logo {
+      a {
+        width: 110px;
+        height: 42px;
+        background-image: url(%=static=%content/logo-case-img.svg);
+      }
+    }
+    .main-nav__item {
+      color: #000000;
+    }
+    .page-header__subscribe-link {
+      color: #000000;
+      
+      border-color: #000000;
+    }
+  }
 }
 
 .page-header__blockDescriptionrowBottom {
@@ -81,6 +150,17 @@
   text-decoration: none;
   color: #1534cf;
   background-color: #ffffff;
+  
+  border: 1px solid transparent;
+  
+  transition: 0.2s ease;
+  &:hover {
+    color: #ffffff;
+    
+    background-color: rgba(0, 15, 86, 0.2);
+    
+    border-color: #ffffff;
+  }
 }
   
 .page_header__scroll {
@@ -177,4 +257,32 @@
   font-weight: 400;
   line-height: 34px;
   color: #000000;
+}
+
+.page-header__subscribe-link {
+  text-align: center;
+  width: 172px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 39px;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &--scroll {
+    color: #0829cc;
+    
+    border-color: #0829cc;
+  }
+  &--case {
+    color: #000000;
+    
+    border-color: #000000;
+  }
 }

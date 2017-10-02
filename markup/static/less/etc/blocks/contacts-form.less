@@ -69,6 +69,44 @@
 
     opacity: 1;
   }
+  &:focus {
+    border-bottom-color: #5673ff;
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #ffffff;
+
+      opacity: 00;
+    }
+    &:-moz-input-placeholder {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+
+      opacity: 0;
+    }
+    &::-moz-placeholder {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+
+      opacity: 0;
+    }
+    &:-ms-input-placeholder {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+
+      opacity: 0;
+    }
+  }
 }
 
 .contacts-form__submit {

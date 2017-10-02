@@ -1,0 +1,59 @@
+.social {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+}
+
+.social__link {
+  position: relative;
+  
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    margin: auto;
+  }
+  &--in {
+    &::before {
+      .bg-svg(@in);
+    }
+  }
+  &--inst {
+    &::before {
+      .bg-svg(@inst);
+    }
+  }
+  &--fb {
+    &::before {
+      .bg-svg(@fb);
+    }
+  }
+  &--fbScroll {
+    &::before {
+      .bg-svg(@fb-scroll);
+    }
+  }
+  &--instScroll {
+    &::before {
+      .bg-svg(@inst-scroll);
+    }
+  }
+  &--inScroll {
+    &::before {
+      .bg-svg(@in-scroll);
+    }
+  }
+}
