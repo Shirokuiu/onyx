@@ -19,7 +19,8 @@ $(function () {
   
   
   $('.main-nav__item').mPageScroll2id({
-    scrollSpeed: 20
+    scrollSpeed: 20,
+    offset: 100
   });
   
   var nav = $('.page-header__blockDescription-rowTop');
@@ -45,6 +46,14 @@ $(function () {
     }
   });
   
+  var portfolioCart = $('.portfolio__cart');
+  
+  portfolioCart.on('mouseover', function () {
+    $(this).addClass('portfolio__cart--hover');
+  });
+  portfolioCart.on('mouseleave', function () {
+    $(this).removeClass('portfolio__cart--hover');
+  });
   
   /*$(window).scroll(function(){
    var servicesLink = $('.page-header__blockDescription-rowTop');
