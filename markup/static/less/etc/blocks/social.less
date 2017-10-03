@@ -1,7 +1,5 @@
 .social {
-  position: absolute;
-  bottom: 50px;
-  right: 0;
+  display: flex;
 }
 
 .social__link {
@@ -10,10 +8,9 @@
   display: block;
   width: 32px;
   height: 32px;
-  margin-left: auto;
-  margin-bottom: 30px;
+  margin-right: 40px;
   &:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
   }
   &::before {
     content: "";
@@ -26,34 +23,24 @@
     
     margin: auto;
   }
-  &--in {
-    &::before {
-      .bg-svg(@in);
-    }
-  }
   &--inst {
     &::before {
       .bg-svg(@inst);
+    }
+    &:hover {
+      &::before {
+        .bg-svg(@inst-hover);
+      }
     }
   }
   &--fb {
     &::before {
       .bg-svg(@fb);
     }
-  }
-  &--fbScroll {
-    &::before {
-      .bg-svg(@fb-scroll);
-    }
-  }
-  &--instScroll {
-    &::before {
-      .bg-svg(@inst-scroll);
-    }
-  }
-  &--inScroll {
-    &::before {
-      .bg-svg(@in-scroll);
+    &:hover {
+      &::before {
+        .bg-svg(@fb-hover);
+      }
     }
   }
 }

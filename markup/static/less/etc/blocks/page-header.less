@@ -38,12 +38,47 @@
       }
     }
   .main-nav__item {
+    display: block !important;
+    padding-bottom: 3px !important;
+    
     color: #ffffff !important;
+    
+    border-bottom: 1px solid transparent;
+    &.mPS2id-highlight {
+      display: block !important;
+      padding-bottom: 3px !important;
+      
+      border-bottom: 1px solid #ffffff !important;
+      
+      opacity: 1 !important;
+    }
   }
   .page-header__subscribe-link {
     color: #ffffff !important;
     
     border-color: #ffffff !important;
+  }
+  .social__link {
+    &--fb {
+      &::before {
+        .bg-svg(@fb) !important;
+      }
+      &:hover {
+        &::before {
+          .bg-svg(@fb-hover) !important;
+        }
+      }
+    }
+    &--inst {
+      &::before {
+        .bg-svg(@inst) !important;
+      }
+      &:hover {
+        &::before {
+          .bg-svg(@inst-hover) !important;
+        }
+      }
+    }
   }
 }
 
@@ -77,15 +112,40 @@
       }
     }
     .main-nav__item {
-      color: #000000;
-      &.mPS2id-highlight {
-        color: red;
-      }
-    }
-    .page-header__subscribe-link {
+      display: block;
+      padding-bottom: 3px;
+      
       color: #000000;
       
-      border-color: #000000;
+      border-bottom: 1px solid transparent;
+      &.mPS2id-highlight {
+        display: block;
+        padding-bottom: 3px;
+
+        border-bottom: 1px solid #000000;
+      }
+    }
+    .social__link {
+      &--fb {
+        &::before {
+          .bg-svg(@fb-scroll);
+        }
+        &:hover {
+          &::before {
+            .bg-svg(@fb-scroll-hover);
+          }
+        }
+      }
+      &--inst {
+        &::before {
+          .bg-svg(@inst-scroll);
+        }
+        &:hover {
+          &::before {
+            .bg-svg(@inst-scroll-hover);
+          }
+        }
+      }
     }
   }
 }
@@ -120,6 +180,30 @@
       color: #000000;
       
       border-color: #000000;
+    }
+  }
+  &--case {
+    .social__link {
+      &--inst {
+        &::before {
+          .bg-svg(@inst-scroll);
+        }
+        &:hover {
+          &::before {
+            .bg-svg(@inst-scroll-hover);
+          }    
+        }
+      }
+      &--fb {
+        &::before {
+          .bg-svg(@fb-scroll);
+        }
+        &:hover {
+          &::before {
+            .bg-svg(@fb-scroll-hover);
+          }
+        }
+      }
     }
   }
 }
@@ -223,7 +307,7 @@
 }
 
 .page-header__caseDescriptionHead-link {
-  display: block;
+  display: inline-block;
   margin-bottom: 26px;
   
   font-size: 37px;
@@ -231,6 +315,9 @@
   line-height: 55px;
   color: #000000;
   text-decoration: none;
+  &--hover {
+    background-image: linear-gradient(to right, blue 75%, transparent 75%);; 
+  }
   &--portfolio {
     margin-bottom: 21px;
     

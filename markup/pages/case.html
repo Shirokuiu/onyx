@@ -9,20 +9,23 @@
       <header class="page-header page-header--case">
         <div class="container">
           <div class="page-header__blockDescription-rowTop wow bounceIn">
-            <div class="logo">
-              <a href="index.html">
-                <img src="%=static=%img/content/logo-case-img.svg" alt="Логотип" width="170" height="65">
-              </a>
-            </div>
-            <nav class="main-nav">
-              <ul class="main-nav__list main-nav__list--case">
-                <li class="main-nav__items"><a href="#" class="main-nav__item">Услуги</a></li>
-                <li class="main-nav__items"><a class="main-nav__item">Работы</a></li>
-                <li class="main-nav__items"><a href="#" class="main-nav__item">Контакты</a></li>
-              </ul>
-            </nav>
-            <div class="page-header__subscribe">
-              <a href="#" class="page-header__subscribe-link page-header__subscribe-link--case">Подпишись</a>
+            <div class="page-header__blockDescription-rowTop-wrap page-header__blockDescription-rowTop-wrap--case">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="%=static=%img/content/logo-case-img.svg" alt="Логотип" width="170" height="65">
+                </a>
+              </div>
+              <nav class="main-nav">
+                <ul class="main-nav__list main-nav__list--case">
+                  <li class="main-nav__items"><a href="index.html#nextStep" class="main-nav__item">Услуги</a></li>
+                  <li class="main-nav__items"><a href="index.html#portfolio" class="main-nav__item">Работы</a></li>
+                  <li class="main-nav__items"><a href="index.html#contacts" class="main-nav__item">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="social wow bounceIn">
+                <a href="#" class="social__link social__link--inst"></a>
+                <a href="#" class="social__link social__link--fb"></a>
+              </div> 
             </div>
           </div>
           <div class="page-header__caseDescriptionHead">
@@ -119,7 +122,7 @@
         </div>
         
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--index">
         <form class="contacts-form" action="actipn.php">
           <div class="container">
             <h2 class="case-pageDesign__headline case-pageDesign__headline--contactsForm">Свяжитесь с нами</h2>
@@ -134,10 +137,11 @@
                 <input class="contacts-form__item" type="tel" name="tel" placeholder="Ваш телефон" required>
               </li>
               <li class="contacts-form__items contacts-form__items--button">
-                <button class="contacts-form__submit" type="submit">Контактировать</button>
+                <button class="contacts-form__submit" type="submit">Связаться</button>
               </li>
             </ul>
           </div>
+          <div class="fromFixedNav"></div>
         </form>
       </footer>
     </div>
