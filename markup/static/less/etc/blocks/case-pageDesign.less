@@ -1,6 +1,11 @@
 .case-pageDesign {
   margin-bottom: 86px;
   padding-top: 89px;
+  &--bg {
+    padding-bottom: 100px;
+    
+    background-color: #FCFCFC;
+  }
 }
 
 .case-pageDesign__linkWrap {
@@ -37,55 +42,14 @@
   }
 }
 
-.case-pageDesign__link {
-  position: absolute;
-  bottom: 79px;
-  
-  align-self: center;
-  
-  font-size: 24px;
-  font-weight: 300;
-  color: #000000;
-  letter-spacing: 1px;
-  text-decoration: none;
-  &--prev,
-  &--next {
-    &::before,
-    &::after {
-      content: '';
-      
-      position: absolute;
-      top: -3px;
-      
-      transform: rotateZ(90deg);
-      
-      .bg-svg(@prev-next-border);
-    }
-    &::before {
-      left: -28px;
-    }
-    &::after {
-      left: 83px;
-    }
-  }
-  &--prev {
-    left: -114px;
-    
-    transform: rotateZ(-90deg);
-  }
-  &--next {
-    right: -114px;
-    z-index: 30;
-    
-    transform: rotateZ(90deg);
-  }
-}
-
 .case-pageDesign__blocksWrap {
   position: relative;
   
   display: flex;
   justify-content: center;
+  &--padding {
+    padding-top: 90px;
+  }
 }
 
 .case-pageDesign__block {

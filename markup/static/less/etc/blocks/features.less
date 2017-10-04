@@ -45,6 +45,44 @@
   
   background-color: #fff;
   box-shadow: 3px 2px 8px 3px rgba(0, 0, 0, 0.03);
+  &--disabled {
+    opacity: 0.3;
+    .features__blockHeadline {
+      color: #000000;
+    }
+    .features__blockIcon {
+      &--marketing {
+        &::before {
+          .bg-svg(@features-icon1-disabled);
+        }
+      }
+       &--smm {
+        &::before {
+          .bg-svg(@features-icon4-disabled);
+        }
+      }
+       &--seo {
+        &::before {
+          .bg-svg(@features-icon3-disabled);
+        }
+      }
+       &--webDesign {
+        &::before {
+          .bg-svg(@features-icon2-disabled);
+        }
+      }
+       &--illustration {
+        &::before {
+          .bg-svg(@features-icon5-disabled);
+        }
+      }
+       &--brend {
+        &::before {
+          .bg-svg(@features-icon6-disabled);
+        }
+      }
+    }
+  }
   &:nth-child(3n) {
     margin-right: 0;
   }

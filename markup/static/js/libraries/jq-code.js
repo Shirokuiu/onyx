@@ -32,6 +32,7 @@ $(function () {
       nav.removeClass('page-header__blockDescription-rowTop--fixed');
     }
   });
+  $(document).trigger('scroll');
   
   var target = $('.fromFixedNav');
   var targetPos = target.offset().top;

@@ -311,9 +311,10 @@
 }
 
 .page-header__caseDescriptionHead-link {
+  display: block;
   margin-bottom: 26px;
   
-  font-size: 37px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 55px;
   color: #000000;
@@ -352,13 +353,16 @@
 }
 
 .page-header__caseDescriptionHead-items {
-  margin-right: 36px;
+  margin-right: 34px;
   
-  font-size: 18px;
+  font-size: 17px;
   line-height: 35px;
   font-weight: 700;
   color: #0829cc;
   text-decoration: none;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .page-header__caseDescriptionHead-text {
