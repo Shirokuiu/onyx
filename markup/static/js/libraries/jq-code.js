@@ -34,14 +34,12 @@ $(function () {
   });
   
   
-  var target = $('.fromFixedNav');
+  var target = $('#fromFixedNav');
   var targetPos = target.offset().top;
   var winHeight = $(window).height();
   var scrollToElem = targetPos - winHeight;
   $(window).scroll(function(){
     var winScrollTop = $(this).scrollTop();
-    
-    console.log('Значение - winScrollTop' + winScrollTop + ' ; Значение scrollToElem - ' + scrollToElem + ';')
     if(winScrollTop > scrollToElem){
       nav.addClass('footer-nav');
     } else {
