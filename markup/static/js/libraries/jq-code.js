@@ -32,7 +32,7 @@ $(function () {
       nav.removeClass('page-header__blockDescription-rowTop--fixed');
     }
   });
-  $(document).trigger('scroll');
+  
   
   var target = $('.fromFixedNav');
   var targetPos = target.offset().top;
@@ -40,6 +40,8 @@ $(function () {
   var scrollToElem = targetPos - winHeight;
   $(window).scroll(function(){
     var winScrollTop = $(this).scrollTop();
+    
+    console.log('Значение - winScrollTop' + winScrollTop + ' ; Значение scrollToElem - ' + scrollToElem + ';')
     if(winScrollTop > scrollToElem){
       nav.addClass('footer-nav');
     } else {
