@@ -2,10 +2,10 @@ new WOW().init();
 
 $(function () {
   $('.logo').on('mouseover', function () {
-    $(this).addClass('animated').addClass('tada');
+    $(this).addClass('animated').addClass('pulse');
   });
   $('.logo').on('mouseleave', function () {
-    $(this).removeClass('animated').removeClass('tada');
+    $(this).removeClass('animated').removeClass('pulse');
   });
   
   $('#pageHeaderScroll').on('click', function (event) {
