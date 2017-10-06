@@ -21,3 +21,58 @@
   
   background-color: #22636f;
 }
+
+.page-footer__contactsLinks {
+  position: absolute;
+  left: 0;
+  bottom: 31px;
+  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.page-footer__contactsLinks-tel {
+  position: relative;
+  
+  display: block;
+  margin-right: 40px;
+  padding-left: 58px;
+  
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 20px;
+  text-decoration: none;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: -10px;
+    left: 0;
+    
+    .bg-svg(@page-footer__contacts-tel);
+  }
+}
+
+.page-footer__contactsLinks-mail {
+  position: relative;
+  
+  display: block;
+  padding-left: 58px;
+  
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 20px;
+  text-decoration: none;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: -10px;
+    left: 0;
+    
+    .bg-svg(@page-footer__contacts-mail);
+  }
+}

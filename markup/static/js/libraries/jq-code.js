@@ -17,6 +17,15 @@ $(function () {
     $('body, html').animate({scrollTop: top}, 1000);
   });
   
+  $('.page-header__link').on('click', function (event) {
+    event.preventDefault();
+    
+    var id = $(this).attr('href'),             
+        top = $(id).offset().top;
+    
+    $('body, html').animate({scrollTop: top}, 1000);
+  });
+  
   
   $('.main-nav__item').mPageScroll2id({
     scrollSpeed: 20,
