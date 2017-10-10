@@ -232,6 +232,8 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 27px;
+  
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   width: 617px;
   font-size: 16px;
@@ -257,7 +259,7 @@
   letter-spacing: 2px;
   
   text-decoration: none;
-  color: #16193f;
+  color: #0e4e61;
   background-color: #ffffff;
   
   border: 1px solid transparent;
@@ -290,15 +292,17 @@
     top: 7px;
     left: 49.9%;
     
-    .bg-svg(@scroll-icon);
+    width: 3px;
+    height: 58px;
+    
+    background-image: url(%=static=%content/scroll.png);
+    background-repeat: no-repeat;
   }
 }
 
 .page-header__caseDescriptionHead {
   display: flex;
   justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
   &--pageDesign {
     margin-bottom: 90px;
   }
@@ -374,6 +378,7 @@
 .page-header__caseDescriptionHead-text {
   .reset();
   
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 34px;
