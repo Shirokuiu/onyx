@@ -62,4 +62,15 @@ $(function () {
   portfolioCart.on('mouseleave', function () {
     $(this).removeClass('portfolio__cart--hover');
   });
+  
+  var portfolioCart = $('.portfolio__cart');
+  
+  var width = $(window).outerWidth();
+    
+    if (width < 1308) {
+      portfolioCart.removeClass('wow, fadeInLeft').addClass('wow, fadeInUp');
+    } else {
+      portfolioCart.removeClass('fadeInUp');
+    }
+  
 });
