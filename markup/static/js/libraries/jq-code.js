@@ -1,4 +1,4 @@
-new WOW().init();
+//new WOW().init();
 
 $(function () {
   $('.logo').on('mouseover', function () {
@@ -72,5 +72,19 @@ $(function () {
     } else {
       portfolioCart.removeClass('fadeInUp');
     }
+  
+  var pageHeaderButton = $('.page-header__button');
+  var pageHeaderHeadline = $('.page-header__headline');
+  var pageHeaderText = $('.page-header__text');
+  var pageHeaderLink = $('.page-header__link');
+  var mainNav = $('.main-nav');
+  
+  pageHeaderButton.on('click', function () {
+    $(this).toggleClass('page-header__button--open');
+    pageHeaderHeadline.toggleClass('page-header__headline--hidden');
+    pageHeaderText.toggleClass('page-header__text--hidden');
+    pageHeaderLink.toggleClass('page-header__link--hidden');
+    mainNav.toggleClass('main-nav--open');
+  });
   
 });

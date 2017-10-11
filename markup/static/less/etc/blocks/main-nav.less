@@ -40,3 +40,27 @@
     opacity: 0.63;
   }
 }
+
+@media (max-width: 910px) {
+  .main-nav {
+    width: 274px;
+  }
+  
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-nav__items {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    display: none;
+    &--open {
+      display: block;
+    }
+  }
+}
