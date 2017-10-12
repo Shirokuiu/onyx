@@ -53,5 +53,19 @@
     
     justify-content: center;
     width: 100%;
+    &--open {
+      flex-direction: column;
+      align-items: center;
+      bottom: 85px;
+      .social__link {
+        &::before {
+          left: -4px;
+        }
+        &--inst {
+          margin-right: 0;
+          margin-bottom: 50px;
+        }
+      }
+    }
   }
 } 

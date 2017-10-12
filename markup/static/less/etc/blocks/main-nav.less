@@ -60,7 +60,30 @@
   .main-nav {
     display: none;
     &--open {
-      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      .main-nav__list {
+        position: relative;
+        top: -79px;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .main-nav__items {
+          margin-bottom: 31px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
   }
 }

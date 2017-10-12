@@ -78,6 +78,7 @@ $(function () {
   var pageHeaderText = $('.page-header__text');
   var pageHeaderLink = $('.page-header__link');
   var mainNav = $('.main-nav');
+  var social = $('.social');
   
   pageHeaderButton.on('click', function () {
     $(this).toggleClass('page-header__button--open');
@@ -85,6 +86,7 @@ $(function () {
     pageHeaderText.toggleClass('page-header__text--hidden');
     pageHeaderLink.toggleClass('page-header__link--hidden');
     mainNav.toggleClass('main-nav--open');
+    social.toggleClass('social--open');
   });
   
 });

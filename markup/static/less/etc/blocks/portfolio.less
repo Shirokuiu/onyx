@@ -97,3 +97,51 @@
     height: auto;
   }
 }
+
+@media (max-width: 767px) {
+  .portfolio__headline {
+    margin-bottom: 21px;
+    
+    font-size: 26px;
+    line-height: 28px;
+  }
+  
+  .portfolio__blocksWrap {
+    flex-direction: column;
+  }
+  
+  .portfolio__cart {
+    display: block;
+    width: 100%;
+    margin-bottom: 58px;
+    &:nth-last-child(-n+2) {
+      margin-bottom: 58px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .portfolio__cart-img {
+    position: relative;
+    left: -8%;
+    
+    width: 116%;
+    margin-bottom: 20px;
+  }
+  
+  .page-header__caseDescriptionHead-linkWrap {
+    overflow: visible;
+    height: auto;
+  }
+  
+  .page-header__caseDescriptionHead-link {
+    &--portfolio {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 35px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
