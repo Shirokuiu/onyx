@@ -543,22 +543,54 @@
   
   .page-header__blockDescription-rowTop {
     &--fixed {
+      .page-header__blockDescription-rowTop-wrap {
+        align-items: flex-start;
+        &--open {
+          height: 100vh;
+        }
+      }
+      
       .logo {
         position: relative;
         z-index: 30;
+        
+        width: 80px;
+        height: 30px;
+        a {
+          .bg-svg(@logo-black-mobile);
+        }
       }
       
       .social {
-        top: 27px;
-        right: 0;
+        position: relative;
+        top: -2px;
+        
+        width: auto;
+        &--open {
+          position: absolute;
+          top: auto;
+          
+          width: 100%;
+        }
       }
       
       .social__link {
         margin-right: 20px;
+        &--inst {
+          &::before {
+            .bg-svg(@inst-scroll-mobile);
+          }
+        }
+        &--fb {
+          &::before {
+            .bg-svg(@fb-scroll-mobile);
+          }
+        }
       }
       
       .page-header__button {
         position: relative;
+        top: 5px;
         z-index: 30;
         
         cursor: pointer;
@@ -576,6 +608,9 @@
   }
   
   .page-header__button {
+    position: relative;
+    top: -3px;
+    
     display: block;
     &--open {
       position: relative;
