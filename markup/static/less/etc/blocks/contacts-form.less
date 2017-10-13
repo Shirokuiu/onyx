@@ -1,3 +1,9 @@
+.contacts-form {
+  &--hidden {
+    display: none;
+  }
+}
+
 .contacts-form__list {
   .reset();
   
@@ -135,5 +141,24 @@
     color: #ffffff;
     background-color: rgba(0, 15, 86, 0.2);
     border-color: #418193;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts-form__items {
+    margin-bottom: 28px;
+  }
+  
+  .contacts-form__item {
+    padding-bottom: 11px;
+    
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .contacts-form__submit {
+    min-width: 194px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

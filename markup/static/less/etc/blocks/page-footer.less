@@ -76,3 +76,39 @@
     .bg-svg(@page-footer__contacts-mail);
   }
 }
+
+@media (max-width: 767px) {
+  .page-footer__contactsLinks {
+    bottom: 24px;
+    
+    flex-direction: column;
+    align-items: center;
+    &--hidden {
+      display: none;
+    }
+  }
+  
+  .page-footer__contactsLinks-tel {
+    margin-bottom: 34px;
+    padding-left: 46px;
+    
+    font-size: 14px;
+    line-height: 16px;
+    &::before {
+      .bg-svg(@page-footer__contacts-tel-mobile);
+    }
+  }
+  
+  .page-footer__contactsLinks-mail {
+    position: relative;
+    left: -12px;
+    
+    padding-left: 46px;
+    
+    font-size: 14px;
+    line-height: 16px;
+    &::before {
+      .bg-svg(@page-footer__contacts-mail-mobile);
+    }
+  }
+}

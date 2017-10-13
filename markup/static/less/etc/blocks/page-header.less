@@ -607,6 +607,45 @@
     }
   }
   
+  .footer-nav {
+    .logo {
+      width: 100px !important;
+      a {
+        width: 100px !important;
+        height: 38px !important;
+        
+        background-image: url(%=static=%content/logo-mobile.svg) !important;
+        background-position: 0 0;
+      }
+    }
+    .social {
+      display: none;
+      &--open {
+        display: flex;
+        &--fb {
+          &::before {
+            background-image: url(../img/svg-sprite/sprite.svg) !important;
+          }
+        }
+        &--inst {
+          &::before {
+            background-image: url(../img/svg-sprite/sprite.svg) !important;
+          }
+        }
+      }
+    }
+    .page-header__button {
+      .bg-svg(@page-header-button);
+      &--open {
+        background-image: none;
+        &::before,
+        &::after {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+  
   .page-header__button {
     position: relative;
     top: -3px;

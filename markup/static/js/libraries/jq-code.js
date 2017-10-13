@@ -81,6 +81,9 @@ $(function () {
   var social = $('.social');
   var pageHeaderBlockDescriptionRowTopWrap = $('.page-header__blockDescription-rowTop-wrap');
   var mainNavItem = $('.main-nav__item');
+  var footerNav = $('.page-header__blockDescription-rowTop .page-header__button');
+  var contactsForm = $('.contacts-form');
+  var pageFooterContactsLinks = $('.page-footer__contactsLinks');
   
   pageHeaderButton.on('click', function () {
     $(this).toggleClass('page-header__button--open');
@@ -90,6 +93,8 @@ $(function () {
     mainNav.toggleClass('main-nav--open');
     social.toggleClass('social--open');
     pageHeaderBlockDescriptionRowTopWrap.toggleClass('page-header__blockDescription-rowTop-wrap--open');
+    contactsForm.toggleClass('contacts-form--hidden');
+    pageFooterContactsLinks.toggleClass('page-footer__contactsLinks--hidden');
   });
 
   mainNavItem.on('click', function () {
