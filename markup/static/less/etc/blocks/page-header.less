@@ -540,6 +540,46 @@
     .container {
       padding-top: 30px;
     }
+    &--rotate {
+      height: auto;
+      padding-bottom: 87px;
+      .container {
+        height: auto;
+      }
+      .page-header__blockDescription-rowTop {
+        margin-bottom: 10px;
+      }
+      .main-nav {
+        &--open {
+          top: 52px;
+          .main-nav__list {
+            top: 0;
+          }
+        }
+      }
+      .page-header__blockDescription-rowTop {
+        &--caseOpen {
+          margin-bottom: 186px;
+        }
+      }
+      .social {
+        bottom: -63px;
+        &--open {
+          bottom: -41px;
+          
+          flex-direction: row;
+          .social__link {
+            &--inst {
+              margin-bottom: 0;
+              margin-right: 38px;
+            }
+          }
+        }
+      }
+      .page-header__blockDescription-rowBottom {
+        position: static;
+      }
+    }
     &--case {
       padding-top: 10px;
       padding-bottom: 10px;

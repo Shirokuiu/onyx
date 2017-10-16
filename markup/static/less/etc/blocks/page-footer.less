@@ -80,6 +80,27 @@
 @media (max-width: 767px) {
   .page-footer {
     background-image: url(../img//content/page-footer-bg-mobile.jpg);
+    &--rotate {
+      height: auto;
+      padding-top: 48px;
+      padding-bottom: 67px;
+      .contacts-form {
+        .container {
+          position: static;
+        }
+      }
+      .contacts-form__items {
+        margin-bottom: 26px;
+      }
+      .page-footer__contactsLinks {
+        bottom: 43px;
+        
+        flex-direction: row;
+      }
+      .page-footer__contactsLinks-tel {
+        margin-bottom: 0;
+      }
+    }
   }
   
   .page-footer__contactsLinks {
