@@ -187,3 +187,54 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .features {
+    margin-bottom: 23px;
+    padding-top: 12px;
+  }
+  
+  .features__headline {
+    margin-bottom: 8px;
+    
+    font-size: 26px;
+  }
+  
+  .features__wraperBlock {
+    padding-bottom: 39px;
+    .owl-stage-outer {
+      min-height: 468px;
+    }
+    .owl-dots {
+      position: relative;
+      top: 39px;
+      
+      display: flex;
+      justify-content: space-between;
+    }
+    .owl-dot {
+      span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        
+        background-color: rgba(17, 64, 88, 0.42); 
+      }
+      &.active {
+        span {
+          background-color: #979797;
+        }
+      }
+    }
+  }
+  
+  .features__block {
+    box-sizing: border-box;
+    width: auto;
+    height: 450px;
+  }
+  
+  .features__blockHeadline {
+    font-size: 16px;
+  }
+}

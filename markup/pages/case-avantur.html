@@ -23,7 +23,8 @@
               <div class="social">
                 <a href="https://www.instagram.com/onyx_agency/" class="social__link social__link--inst"></a>
                 <a href="https://www.facebook.com/agency.onyx/" class="social__link social__link--fb"></a>
-              </div> 
+              </div>
+              <button class="page-header__button" type="button"></button> 
             </div>
           </div>
           <div class="page-header__caseDescriptionHead">
@@ -48,7 +49,10 @@
         <div class="case-fonts case-fonts--itrip">
           <div class="container">
             <div class="case-fonts__img">
-              <img src="%=static=%img/content/avantur-fonts.png" alt="Картинка">
+              <picture>
+                <source media="(max-width: 767px)" srcset="%=static=%img/content/avantur-fonts-mobile.jpg">
+                <img src="%=static=%img/content/avantur-fonts.png" alt="Картинка">
+              </picture>
             </div>
           </div>
         </div>
@@ -69,7 +73,10 @@
           <div class="case-fonts case-fonts--itrip">
             <div class="container">
               <div class="case-fonts__img">
-                <img src="%=static=%img/content/avantur-project.png" alt="Картинка">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="%=static=%img/content/avantur-project-mobile.jpg">
+                  <img src="%=static=%img/content/avantur-project.png" alt="Картинка">
+                </picture>
               </div>
             </div>
           </div>
@@ -140,13 +147,14 @@
               </div>
             </div>
             
-            <h2 id="portfolio" class="portfolio__headline portfolio__headline--marginTop">Примеры наших работ</h2>
+            <h2 id="portfolio" class="portfolio__headline portfolio__headline--marginTop">Наши работы</h2>
             <div class="portfolio__blocksWrap">
               <a class="portfolio__cart wow fadeInLeft" data-wow-offset="300" href="case-photoart.html">
                 <div class="portfolio__cart-img">
-              
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="%=static=%img/content/case-photoart--mobile.jpg">
                     <img src="%=static=%img/content/case-photoart.png" alt="Каринка">
-                
+                  </picture>
                 </div>
                 <div class="page-header__caseDescriptionHead-linkWrap">
                    <div class="page-header__caseDescriptionHead-link page-header__caseDescriptionHead-link--portfolio" >Photoart</div>
@@ -162,9 +170,10 @@
               
               <a class="portfolio__cart wow fadeInRight" data-wow-offset="300" href="case-grandVoyage.html">
                 <div class="portfolio__cart-img">
-              
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="%=static=%img/content/portfolio-img6-mobile.jpg">
                     <img src="%=static=%img/content/portfolio-img6.jpg" alt="Каринка">
-                
+                  </picture>
                 </div>
                 <div class="page-header__caseDescriptionHead-linkWrap">
                    <div class="page-header__caseDescriptionHead-link page-header__caseDescriptionHead-link--portfolio" >Туресчтический сайт grandvoayge.md</div>
@@ -178,6 +187,7 @@
                 </ul>
               </a>
             </div>
+            <a class="portfolio__button" href="index.html#portfolio">Больше работ</a>
           </div>
         </div>
         
@@ -185,7 +195,7 @@
       <footer class="page-footer page-footer--index">
         <form id="contacts" class="contacts-form" action="actipn.php">
           <div class="container">
-            <h2 class="case-pageDesign__headline case-pageDesign__headline--contactsForm">Свяжитесь с нами</h2>
+            <h2 class="case-pageDesign__headline case-pageDesign__headline--contactsForm">Контакты</h2>
             <ul class="contacts-form__list">
               <li class="contacts-form__items">
                 <input class="contacts-form__item" type="text" name="name" placeholder="Ваше имя" required>
