@@ -10,6 +10,22 @@ wow = new WOW(
 wow.init();
 
 $(function () {
+  var wayp = $('.features');
+  var mainNavItem = $('.main-nav__item');
+  
+  mainNavItem.on('click', function (e) {
+    
+    
+    var id = $(this).attr('href'),
+        top = $(id).offset().top - 61;
+    
+    $('body, html').animate({scrollTop: top}, 10);
+  });
+  
+  wayp.waypoint(function () {
+    console.log('Ok');
+  });
+  
   $('.logo').on('mouseover', function () {
     $(this).addClass('animated').addClass('pulse');
   });
@@ -42,10 +58,10 @@ $(function () {
   var pageFooterContactsLinks = $('.page-footer__contactsLinks');
   
   if (width < 768) {
-    $('.main-nav__item').mPageScroll2id({
+    /*$('.main-nav__item').mPageScroll2id({
       scrollSpeed: 20,
       offset: 50
-    });
+    });*/
     
     contactsFormItem.focusin(function () {
       pageFooterContactsLinks.addClass('page-footer__contactsLinks--hidden');
@@ -54,10 +70,10 @@ $(function () {
       pageFooterContactsLinks.removeClass('page-footer__contactsLinks--hidden');
     });
   } else {
-    $('.main-nav__item').mPageScroll2id({
+    /*$('.main-nav__item').mPageScroll2id({
       scrollSpeed: 20,
       offset: 100
-    });
+    });*/
   }
   
   
@@ -193,7 +209,7 @@ $(function () {
     mainNav.removeClass('main-nav--open');
     social.removeClass('social--open');
     pageHeaderBlockDescriptionRowTopWrap.removeClass('page-header__blockDescription-rowTop-wrap--open');
-    contactsForm.toggleClass('contacts-form--hidden');
+    
     pageFooterContactsLinks.toggleClass('page-footer__contactsLinks--hidden');
     pageHeaderBlockDescriptionRowTop.toggleClass('page-header__blockDescription-rowTop--caseOpen');
   });
