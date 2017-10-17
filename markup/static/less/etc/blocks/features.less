@@ -191,7 +191,7 @@
 @media (max-width: 767px) {
   .features {
     margin-bottom: 23px;
-    padding-top: 12px;
+    padding-top: 62px;
   }
   
   .features__headline {
@@ -211,18 +211,26 @@
       
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
     .owl-dot {
       span {
         display: block;
-        width: 30px;
-        height: 2px;
+        width: 7px;
+        height: 7px;
         
-        background-color: rgba(17, 64, 88, 0.42); 
+        background-color: rgba(17, 64, 88, 0.42);
+        
+        border-radius: 50%;
       }
       &.active {
         span {
+          width: 30px;
+          height: 2px;
+          
           background-color: #979797;
+          
+          border-radius: 0;
         }
       }
     }
@@ -232,6 +240,9 @@
     box-sizing: border-box;
     width: auto;
     height: 450px;
+    &--disabled {
+      display: initial;
+    }
   }
   
   .features__blockHeadline {

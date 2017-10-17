@@ -548,6 +548,24 @@
       }
       .page-header__blockDescription-rowTop {
         margin-bottom: 10px;
+        &--hidden {
+          display: none;
+        }
+        &--rotate {
+          .main-nav {
+            &--open {
+              .main-nav__list {
+                top: -65px;
+              }
+            }
+          }
+          .social {
+            &--open {
+              top: 140px;
+              left: 1px;
+            }
+          }
+        }
       }
       .main-nav {
         &--open {
@@ -671,6 +689,12 @@
     }
   }
   
+  .page-header__caseDescriptionHead-link {
+    &--pageDesign {
+      margin-bottom: 12px;
+    }
+  }
+  
   .page-header__blockDescription-rowTop {
     &--fixed {
       padding-top: 10px !important;
@@ -696,7 +720,6 @@
       .social {
         position: relative;
         top: -2px;
-        left: -11px;
         
         width: auto;
         &--open {
