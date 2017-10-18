@@ -18,9 +18,9 @@
                 </div>
                 <nav class="main-nav">
                   <ul class="main-nav__list">
-                    <li class="main-nav__items"><a href="#navStep" class="main-nav__item">Услуги</a></li>
-                    <li class="main-nav__items"><a href="#portfolio" class="main-nav__item">Работы</a></li>
-                    <li class="main-nav__items"><a href="#contacts" class="main-nav__item">Контакты</a></li>
+                    <li class="main-nav__items"><a href="#nextStep" class="main-nav__item main-nav__item--trackServices main-nav__item--track">Услуги</a></li>
+                    <li class="main-nav__items"><a href="#portfolio" class="main-nav__item main-nav__item--portfolio main-nav__item--track">Работы</a></li>
+                    <li class="main-nav__items"><a href="#contacts" class="main-nav__item main-nav__item--trackFooter">Контакты</a></li>
                   </ul>
                 </nav>
                 <div class="social">
@@ -42,10 +42,10 @@
       </header>
       
       <main class="page-content">
-        <div id="nextStep" class="features">
+        <div id="nextStep" class="features features-jsNav">
           <div class="container">
             <div class="features__content">
-              <h2 id="navStep" class="features__headline">Мы хорошо делаем</h2>
+              <h2 class="features__headline">Мы хорошо делаем</h2>
               <div class="features__wraperBlock">
 
                 <div class="features__block wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="200">
@@ -84,7 +84,7 @@
           </div>
         </div>
         
-        <div id="portfolio" class="portfolio">
+        <div id="portfolio" class="portfolio portfolio-jsNav">
           <div class="container">
             <h2 class="portfolio__headline">Наши работы</h2>
             <div class="portfolio__blocksWrap">
@@ -276,9 +276,9 @@
         
       </main>
       
-      <footer class="page-footer page-footer--index">
+      <footer id="contacts" class="page-footer page-footer--index tracked">
        
-        <form id="contacts" class="contacts-form" action="actipn.php" autocomplete="off">
+        <form  class="contacts-form" action="actipn.php" autocomplete="off">
           <div class="container">
             <h2 class="case-pageDesign__headline case-pageDesign__headline--contactsForm">Контакты</h2>
             <ul class="contacts-form__list">

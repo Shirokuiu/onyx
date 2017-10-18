@@ -10,6 +10,40 @@ wow = new WOW(
 wow.init();
 
 $(function () {
+  var mainNavItemServises = $('.main-nav__item--services');
+  var mainNavItemWorks = $('.main-nav__item--works');
+  var mainNavItemContacts = $('.main-nav__item--contacts');
+  var width = $(window).outerWidth();
+  var height = $(window).outerHeight();
+  var features = $('.features');
+  
+  var pageHeaderButton = $('.page-header__button');
+  var pageHeaderHeadline = $('.page-header__headline');
+  var pageHeaderText = $('.page-header__text');
+  var pageHeaderLink = $('.page-header__link');
+  var mainNav = $('.main-nav');
+  var social = $('.social');
+  var pageHeaderBlockDescriptionRowTopWrap = $('.page-header__blockDescription-rowTop-wrap');
+  var mainNavItem = $('.main-nav__item--track');
+  var mainNavItemFooter = $('.main-nav__item--trackFooter');
+  var footerNav = $('.page-header__blockDescription-rowTop .page-header__button');
+  var contactsForm = $('.contacts-form');
+  var pageFooterContactsLinks = $('.page-footer__contactsLinks');
+  var pageHeaderBlockDescriptionRowTop = $('.page-header__blockDescription-rowTop');
+  var portfolioButton = $('.portfolio__button');
+  var pageHeader = $('.page-header');
+  var pageFooter = $('.page-footer');
+  
+  var navLiFooter = $('.main-nav__item--trackFooter');
+  var navLiServices = $('.main-nav__item--trackServices');
+  var navLiPortfolio = $('.main-nav__item--portfolio');
+  
+  if (height <= 767) {
+    features.addClass('features--paddingLaptop');
+  } else {
+    features.removeClass('features--paddingLaptop');
+  }
+  
   $('.logo').on('mouseover', function () {
     $(this).addClass('animated').addClass('pulse');
   });
@@ -36,43 +70,47 @@ $(function () {
   });
   
   var nav = $('.page-header__blockDescription-rowTop');
-  var width = $(window).outerWidth();
-  var height = $(window).outerHeight();
   var contactsFormItem = $('.contacts-form__item');
-  var pageFooterContactsLinks = $('.page-footer__contactsLinks');
   
-  if (width < 768) {
-    $('.main-nav__item').mPageScroll2id({
-      scrollSpeed: 20,
-      offset: 50
-    });
-    
+   if (width <= 768) {
     contactsFormItem.focusin(function () {
       pageFooterContactsLinks.addClass('page-footer__contactsLinks--hidden');
     });
     contactsFormItem.focusout(function () {
       pageFooterContactsLinks.removeClass('page-footer__contactsLinks--hidden');
     });
-  } else {
-    $('.main-nav__item').mPageScroll2id({
-      scrollSpeed: 20,
-      offset: 100
-    });
-  }
-  
+  } 
   
   $(window).scroll(function () {
     var i = 0;
     var footerPos = $('footer').offset().top;
+    var servicesPos = $('.features-jsNav').offset().top;
+    var portfolioPos = $('.portfolio-jsNav').offset().top;
     
     if (width < 768) {
       i = $(this).scrollTop() + 9;
     } else {
       i = $(this).scrollTop() + 1;
     }
+    
+    if (i > servicesPos && i < portfolioPos) {
+      navLiServices.addClass('mPS2id-highlight');
+    } else {
+      navLiServices.removeClass('mPS2id-highlight');
+    }
+    
+    if (i > portfolioPos && i < footerPos) {
+      navLiPortfolio.addClass('mPS2id-highlight');
+    } else {
+      navLiPortfolio.removeClass('mPS2id-highlight');
+    }
 
     if (i > footerPos) {
       nav.addClass('footer-nav');
+      navLiFooter.addClass('mPS2id-highlight');
+      if (height < 768 && height >= 420 && i > footerPos) {
+        pageHeaderButton.addClass('page-header__button--footer');
+      }
       if (height < 420 && i > footerPos) {
         nav.removeClass('page-header__blockDescription-rowTop--rotate');
         nav.addClass('page-header__blockDescription-rowTop--hidden');
@@ -80,6 +118,8 @@ $(function () {
     } else {
       nav.removeClass('footer-nav');
       nav.removeClass('page-header__blockDescription-rowTop--hidden');
+      pageHeaderButton.removeClass('page-header__button--footer');
+      navLiFooter.removeClass('mPS2id-highlight');
     }
   });
   
@@ -156,33 +196,32 @@ $(function () {
     featuresWraperBlock.owlCarousel('destroy');
   }
   
-  var pageHeaderButton = $('.page-header__button');
-  var pageHeaderHeadline = $('.page-header__headline');
-  var pageHeaderText = $('.page-header__text');
-  var pageHeaderLink = $('.page-header__link');
-  var mainNav = $('.main-nav');
-  var social = $('.social');
-  var pageHeaderBlockDescriptionRowTopWrap = $('.page-header__blockDescription-rowTop-wrap');
-  var mainNavItem = $('.main-nav__item');
-  var footerNav = $('.page-header__blockDescription-rowTop .page-header__button');
-  var contactsForm = $('.contacts-form');
-  var pageFooterContactsLinks = $('.page-footer__contactsLinks');
-  var pageHeaderBlockDescriptionRowTop = $('.page-header__blockDescription-rowTop');
-  var portfolioButton = $('.portfolio__button');
-  var pageHeader = $('.page-header');
-  var pageFooter = $('.page-footer');
-  
   pageHeaderButton.on('click', function () {
-    $(this).toggleClass('page-header__button--open');
-    pageHeaderHeadline.toggleClass('page-header__headline--hidden');
-    pageHeaderText.toggleClass('page-header__text--hidden');
-    pageHeaderLink.toggleClass('page-header__link--hidden');
-    mainNav.toggleClass('main-nav--open');
-    social.toggleClass('social--open');
-    pageHeaderBlockDescriptionRowTopWrap.toggleClass('page-header__blockDescription-rowTop-wrap--open');
-    contactsForm.toggleClass('contacts-form--hidden');
-    pageFooterContactsLinks.toggleClass('page-footer__contactsLinks--hidden');
-    pageHeaderBlockDescriptionRowTop.toggleClass('page-header__blockDescription-rowTop--caseOpen');
+    if (pageHeaderButton.hasClass('page-header__button--open')) {
+      pageHeaderButton.removeClass('page-header__button--open');
+      pageFooterContactsLinks.removeClass('page-footer__contactsLinks--hidden');
+      contactsForm.removeClass('contacts-form--hidden');
+      pageHeaderHeadline.removeClass('page-header__headline--hidden');
+      pageHeaderText.removeClass('page-header__text--hidden');
+      pageHeaderLink.removeClass('page-header__link--hidden');
+      mainNav.removeClass('main-nav--open');
+      social.removeClass('social--open');
+      pageHeaderBlockDescriptionRowTopWrap.removeClass('page-header__blockDescription-rowTop-wrap--open');
+      pageHeaderBlockDescriptionRowTop.removeClass('page-header__blockDescription-rowTop--caseOpen');
+          
+    } else {
+      pageHeaderButton.addClass('page-header__button--open');
+      pageFooterContactsLinks.addClass('page-footer__contactsLinks--hidden');
+      contactsForm.addClass('contacts-form--hidden');
+      pageHeaderHeadline.addClass('page-header__headline--hidden');
+      pageHeaderText.addClass('page-header__text--hidden');
+      pageHeaderLink.addClass('page-header__link--hidden');
+      mainNav.addClass('main-nav--open');
+      social.addClass('social--open');
+      pageHeaderBlockDescriptionRowTopWrap.addClass('page-header__blockDescription-rowTop-wrap--open');
+      pageHeaderBlockDescriptionRowTop.addClass('page-header__blockDescription-rowTop--caseOpen');
+      
+    }
   });
 
   mainNavItem.on('click', function () {
@@ -193,9 +232,19 @@ $(function () {
     mainNav.removeClass('main-nav--open');
     social.removeClass('social--open');
     pageHeaderBlockDescriptionRowTopWrap.removeClass('page-header__blockDescription-rowTop-wrap--open');
-    contactsForm.toggleClass('contacts-form--hidden');
-    pageFooterContactsLinks.toggleClass('page-footer__contactsLinks--hidden');
-    pageHeaderBlockDescriptionRowTop.toggleClass('page-header__blockDescription-rowTop--caseOpen');
+    pageHeaderBlockDescriptionRowTop.removeClass('page-header__blockDescription-rowTop--caseOpen');
+  });
+  
+  mainNavItemFooter.on('click', function () {
+    pageHeaderButton.removeClass('page-header__button--open');
+    pageHeaderHeadline.removeClass('page-header__headline--hidden');
+    pageHeaderText.removeClass('page-header__text--hidden');
+    pageHeaderLink.removeClass('page-header__link--hidden');
+    mainNav.removeClass('main-nav--open');
+    social.removeClass('social--open');
+    pageHeaderBlockDescriptionRowTopWrap.removeClass('page-header__blockDescription-rowTop-wrap--open');
+    contactsForm.removeClass('contacts-form--hidden');
+    pageFooterContactsLinks.removeClass('page-footer__contactsLinks--hidden');
   });
   
   portfolioButton.on('click', function () {
