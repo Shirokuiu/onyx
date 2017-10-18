@@ -84,8 +84,8 @@ $(function () {
   $(window).scroll(function () {
     var i = 0;
     var footerPos = $('footer').offset().top;
-    var servicesPos = $('.features').offset().top;
-    var portfolioPos = $('.portfolio').offset().top;
+    var servicesPos = $('.features-jsNav').offset().top;
+    var portfolioPos = $('.portfolio-jsNav').offset().top;
     
     if (width < 768) {
       i = $(this).scrollTop() + 9;
