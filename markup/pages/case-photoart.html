@@ -8,23 +8,25 @@
     <div class="page__wrapper">
       <header class="page-header page-header--case">
         <div class="container">
-          <div class="page-header__blockDescription-rowTop">
-            <div class="page-header__blockDescription-rowTop-wrap page-header__blockDescription-rowTop-wrap--case">
-              <div class="logo logo--case">
-                <a href="index.html"></a>
+          <div class="page-header__blockDescription-rowTop-fixStiky">
+            <div class="page-header__blockDescription-rowTop">
+              <div class="page-header__blockDescription-rowTop-wrap page-header__blockDescription-rowTop-wrap--case">
+                <div class="logo logo--case">
+                  <a href="index.html"></a>
+                </div>
+                <nav class="main-nav">
+                  <ul class="main-nav__list main-nav__list--case">
+                    <li class="main-nav__items"><a href="index.html#nextStep" class="main-nav__item">Услуги</a></li>
+                    <li class="main-nav__items"><a href="index.html#portfolio" class="main-nav__item main-nav__item--active-case">Работы</a></li>
+                    <li class="main-nav__items"><a href="index.html#contacts" class="main-nav__item">Контакты</a></li>
+                  </ul>
+                </nav>
+                <div class="social">
+                  <a href="https://www.instagram.com/onyx_agency/" class="social__link social__link--inst"></a>
+                  <a href="https://www.facebook.com/agency.onyx/" class="social__link social__link--fb"></a>
+                </div>
+                <button class="page-header__button" type="button"></button> 
               </div>
-              <nav class="main-nav">
-                <ul class="main-nav__list main-nav__list--case">
-                  <li class="main-nav__items"><a href="index.html#nextStep" class="main-nav__item">Услуги</a></li>
-                  <li class="main-nav__items"><a href="index.html#portfolio" class="main-nav__item main-nav__item--active-case">Работы</a></li>
-                  <li class="main-nav__items"><a href="index.html#contacts" class="main-nav__item">Контакты</a></li>
-                </ul>
-              </nav>
-              <div class="social">
-                <a href="https://www.instagram.com/onyx_agency/" class="social__link social__link--inst"></a>
-                <a href="https://www.facebook.com/agency.onyx/" class="social__link social__link--fb"></a>
-              </div>
-              <button class="page-header__button" type="button"></button> 
             </div>
           </div>
           <div class="page-header__caseDescriptionHead">
@@ -164,5 +166,20 @@
     <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $(".contacts-form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+              type: "POST", //Метод отправки
+              url: "mail.php", //путь до php фаила отправителя
+              data: form_data,
+              success: function() {
+               //код в этом блоке выполняется при успешной отправке сообщения
+               alert("Ваше сообщение отпрвлено!");
+              }
+          });
+        });
+      });
   </body>
 </html>
