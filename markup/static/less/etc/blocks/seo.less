@@ -1,0 +1,271 @@
+.seo__features {
+  margin-bottom: 150px;
+  
+  background-image: url(%=static=%content/seo-features-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% 90%;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.seo__features-block {
+  width: 340px;
+  &--img {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+}
+
+.seo__features-block-content {
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.seo__features-block-content-headline {
+  .reset();
+  
+  margin-bottom: 27px;
+  
+  font-size: 18px;
+  line-height: 20px;
+  color: #16193f;
+  text-align: right;
+}
+
+.seo__features-block-content-text {
+  .reset();
+  
+  font-size: 14px;
+  line-height: 32px;
+  color: #000000;
+  text-align: right;
+}
+
+.seo__app-row {
+  position: relative;
+  
+  display: flex;
+  justify-content: space-between;
+  &--reverse {
+    flex-direction: row-reverse;
+    .seo__app-row-content {
+      position: relative;
+      left: 48px;
+      right: 0;
+    }
+    .seo__app-row-line {
+      width: 248px;
+      
+      transform: rotate(-21deg);
+    }
+  }
+}
+
+.seo__app-row-img {
+  width: 558px;
+  height: 378px;
+  img {
+    display: block;
+  }
+}
+
+.seo__app-row-content {
+  position: relative;
+  right: 28px;
+  
+  width: 465px;
+  margin-top: 96px;
+}
+
+.seo__app-row-content-headline {
+  .reset();
+  
+  margin-bottom: 15px;
+  
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #16193f;
+}
+
+.seo__app-row-content-border {
+  width: 50px;
+  height: 2px;
+  margin-bottom: 12px;
+  
+  background-color: #000000;
+}
+
+.seo__app-row-content-text {
+  .reset();
+  
+  font-size: 14px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.seo__app-row-line {
+  position: absolute;
+  bottom: 21px;
+  left: 40%;
+  z-index: 10;
+    
+  width: 250px;
+  height: 1px;
+  
+  background-color: #eee;
+  
+  transform: rotate(21deg);
+}
+
+.seo__price {
+  padding-top: 92px;
+  padding-bottom: 100px;
+  
+  background-color: #f3f6f8;
+}
+
+.seo__price-blocksWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seo__price-block {
+  width: 371px;
+  
+  box-shadow: 3px 2px 8px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+}
+
+.seo__price-block-headlineWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  padding-left: 52px;
+  padding-right: 39px;
+  padding-bottom: 35px;
+  
+  background-color: #fff;
+}
+
+.seo__price-block-headline {
+  .reset();
+  
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #16193f;
+  &--pro {
+    position: relative;
+    &::before {
+      content: 'BEST SELLER';
+      
+      position: absolute;
+      top: -17px;
+      left: 0;
+      
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #111230;
+      letter-spacing: 1px;
+      
+    }
+    &::after {
+      content: '';
+      
+      position: absolute;
+      top: -5px;
+      left: -23px;
+      
+      //.bg-svg(@seo-price-star);
+    }
+  }
+}
+
+.seo__price-block-price {
+  display: block;
+  
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #16193f;
+}
+
+.seo__price-block-list {
+  .reset();
+  
+  padding-top: 24px;
+  padding-left: 52px;
+  padding-right: 39px;
+  padding-bottom: 39px;
+  
+  list-style: none;
+  
+  background-color: #fefefe;
+}
+
+.seo__price-block-items {
+  margin-bottom: 26px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.seo__price-block-item-title {
+  .reset();
+  
+  position: relative;
+  
+  font-size: 14px;
+  line-height: 26px;
+  color: #111131;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    
+    //.bg-svg(@seo-price-confirm);
+  }
+}
+
+.seo__price-block-item-text {
+  .reset();
+  
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.seo__price-block-button {
+  .reset();
+  
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #125464;
+  text-align: center;
+  
+  border: none;
+  border: 1px solid #979797;
+  border-radius: 88px;
+  outline: none;
+}
