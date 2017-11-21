@@ -131,6 +131,18 @@
   background-color: #f3f6f8;
 }
 
+.seo__price-title {
+  .reset();
+  
+  margin-bottom: 58px;
+  
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+}
+
 .seo__price-blocksWrap {
   display: flex;
   justify-content: space-between;
@@ -138,7 +150,9 @@
 
 .seo__price-block {
   width: 371px;
-  
+}
+
+.seo__price-block-content {
   box-shadow: 3px 2px 8px 3px rgba(0, 0, 0, 0.03);
   border-radius: 4px;
 }
@@ -213,18 +227,15 @@
   list-style: none;
   
   background-color: #fefefe;
-}
-
-.seo__price-block-items {
-  margin-bottom: 26px;
   &:last-child {
     margin-bottom: 0;
   }
+  &--padding {
+    padding-top: 0;
+  }
 }
 
-.seo__price-block-item-title {
-  .reset();
-  
+.seo__price-block-items {
   position: relative;
   
   font-size: 14px;
@@ -234,19 +245,30 @@
     content: '';
     
     position: absolute;
-    top: 6px;
-    left: -20px;
+    top: 11px;
+    left: -17px;
     
-    .bg-svg(@seo-price-confirm);
+    width: 2px;
+    height: 2px;
+    
+    background-color: #000000;
   }
-}
-
-.seo__price-block-item-text {
-  .reset();
-  
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
+  &--button {
+    margin-top: 30px;
+    &::before {
+      display: none;
+    }
+  }
+  &--confirm {
+    &::before {
+      top: 7px;
+      left: -21px;
+      
+      background-color: transparent;
+      
+      .bg-svg(@seo-price-confirm);
+    }
+  }
 }
 
 .seo__price-block-button {
