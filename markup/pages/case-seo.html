@@ -5,6 +5,9 @@
   </head>
   <body class="page">
     %=symbols=%
+    <script>
+      fbq('track', 'ViewContent');
+    </script>
     <div class="page__wrapper">
       <header class="page-header page-header--case">
         <div class="container">
@@ -308,5 +311,24 @@
     <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+            $(".contacts-form").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+                    $('.contacts-form').addClass('contacts-form--hidden');
+                    $('.page-footer__formSend').removeClass('page-footer__formSend--hidden');
+                    $("#form").trigger("reset");
+                });
+                return false;
+            });
+
+        });
+  </script>
   </body>
 </html>

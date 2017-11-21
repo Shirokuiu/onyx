@@ -5,6 +5,9 @@
   </head>
   <body class="page">
     %=symbols=%
+    <script>
+      fbq('track', 'ViewContent');
+    </script>
     <div class="page__wrapper">
       <header class="page-header page-header--case">
         <div class="container">
@@ -291,21 +294,21 @@
     <script type="text/javascript">
       $(document).ready(function() {
 
-          $(".contacts-form").submit(function() {
-              $.ajax({
-                  type: "POST",
-                  url: "mail.php",
-                  data: $(this).serialize()
-              }).done(function() {
-                  $(this).find("input").val("");
-                  $('.contacts-form').addClass('contacts-form--hidden');
-                  $('.page-footer__formSend').removeClass('page-footer__formSend--hidden');
-                  $("#form").trigger("reset");
-              });
-              return false;
-          });
+            $(".contacts-form").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+                    $('.contacts-form').addClass('contacts-form--hidden');
+                    $('.page-footer__formSend').removeClass('page-footer__formSend--hidden');
+                    $("#form").trigger("reset");
+                });
+                return false;
+            });
 
-      });
-    </script>
+        });
+  </script>
   </body>
 </html>
