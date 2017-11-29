@@ -1,1 +1,25 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 61.58 64.99"><defs><radialGradient id="radial-gradient" cx="-267.18" cy="434.5" r="0.91" gradientTransform="matrix(0, 57.33, 57.33, 0, -24878.75, 15333.99)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0a6972"/><stop offset="1" stop-color="#16193f"/></radialGradient></defs><title>features-icon6</title><g id="Page-1"><g id="INDEX-PAGE"><g id="SERVICES"><g id="Group-7"><g id="PERK-1-Copy-3"><g id="Group-4"><g id="Group-24"><circle id="Oval" cx="30.79" cy="30.81" r="30.79" style="fill:#0644d6"/><path id="Shape" d="M61.74,31A30.79,30.79,0,1,0,15.35,57.54V56.25a9.47,9.47,0,0,1,9.47-9.47H39.27a9.47,9.47,0,0,1,9.47,9.35A30.74,30.74,0,0,0,61.74,31h0ZM40.83,44.61H23.27L15.94,34.47,29.4,11.09V15l2.27-3.94v16a2.59,2.59,0,1,0,.76,0v-16L34.69,15V11.08L48.15,34.46Z" transform="translate(-0.16 -0.21)" style="fill:url(#radial-gradient)"/><g id="Group"><path id="Shape-2" data-name="Shape" d="M29.56,30.36a3.61,3.61,0,0,1,2.11-3.28v-16L29.4,15v12.1A3.61,3.61,0,0,0,30.86,34H31a3.59,3.59,0,0,0,1.08-.2A3.61,3.61,0,0,1,29.56,30.36Z" transform="translate(-0.16 -0.21)" style="fill:#082e3c"/><polygon id="Shape-3" data-name="Shape" points="38.39 44.39 40.66 44.39 47.99 34.24 34.53 10.87 34.53 14.81 45.72 34.24 38.39 44.39" style="fill:#082e3c"/><path id="Shape-4" data-name="Shape" d="M48.74,56.16a9.47,9.47,0,0,0-9.47-9.35H37a9.47,9.47,0,0,1,9.47,9.47v1.35Q47.63,56.93,48.74,56.16Z" transform="translate(-0.16 -0.21)" style="fill:#082e3c"/></g><path id="Shape-5" data-name="Shape" d="M15.35,57.56V65.2h2.27V58.79Q16.45,58.22,15.35,57.56Z" transform="translate(-0.16 -0.21)" style="fill:#fff"/><g id="Group-2" data-name="Group"><path id="Shape-6" data-name="Shape" d="M25.53,44.61h13l7.33-10.14L34.7,15,32.43,11.1v16A3.63,3.63,0,0,1,31,34h-0.1a3.61,3.61,0,0,1-1.46-6.9v-16L16,34.46l7.31,10.15h2.27Z" transform="translate(-0.16 -0.21)" style="fill:#fff"/><path id="Shape-7" data-name="Shape" d="M37,46.8H24.82a9.47,9.47,0,0,0-9.47,9.47v2c0.76,0.44,1.51.85,2.27,1.22a30.81,30.81,0,0,0,28.86-1.17v-2.1A9.47,9.47,0,0,0,37,46.8h0Z" transform="translate(-0.16 -0.21)" style="fill:#fff"/></g></g></g></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="52px" viewBox="0 0 32 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="INDEX-PAGE" transform="translate(-1229.000000, -1638.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="SERVICES" transform="translate(0.000000, 900.000000)">
+                <g id="Group-7" transform="translate(936.000000, 513.000000)">
+                    <g id="PERK-1-Copy-3">
+                        <g id="Group-4" transform="translate(278.000000, 214.000000)">
+                            <g id="Group-24">
+                                <g id="Group" transform="translate(15.121951, 10.585366)">
+                                    <path d="M10.4114634,34.0243902 L23.4390244,34.0243902 L30.7656098,23.885122 L19.5753659,4.45341463 L17.3070732,0.514146341 L17.3070732,16.5207317 C18.819855,17.2426896 19.6414083,18.9067444 19.2947305,20.5467281 C18.9480526,22.1867118 17.5233437,23.3759269 15.8478049,23.4239024 L15.7495122,23.4239024 C14.0560441,23.4059054 12.6021779,22.2143868 12.2519142,20.5574398 C11.9016505,18.9004928 12.7489344,17.2225317 14.2902439,16.5207317 L14.2902439,0.491463415 L0.831707317,23.87 L8.14317073,34.0243902 L10.4114634,34.0243902 Z" id="Shape"></path>
+                                    <path d="M21.8814634,36.2170732 L9.69317073,36.2170732 C4.4650547,36.2170732 0.226829268,40.4552986 0.226829268,45.6834146 L0.226829268,47.732439 C0.982926829,48.1709756 1.73902439,48.5792683 2.49512195,48.9497561 C11.7137661,53.3718304 22.5256248,52.9327845 31.3553659,47.7778049 L31.3553659,45.6758537 C31.3533614,43.1652236 30.3540946,40.7582187 28.5773931,38.9843531 C26.8006916,37.2104875 24.3920935,36.2150671 21.8814634,36.2170732 L21.8814634,36.2170732 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -85,7 +85,7 @@ $(function () {
     var i = 0;
     var footerPos = $('footer').offset().top;
     var servicesPos = $('.features-jsNav').offset().top;
-    var portfolioPos = $('.portfolio-jsNav').offset().top;
+    var portfolioPos = $('.portfolio-jsNav').offset().top - 40;
     
     if (width < 768) {
       i = $(this).scrollTop() + 9;
@@ -168,9 +168,27 @@ $(function () {
             }
         }
       });
+      
+      navLiPortfolio.on('click', function (event) {
+        event.preventDefault();
+
+        var id = $(this).attr('href'),             
+            top = $(id).offset().top;
+
+        $('body, html').animate({scrollTop: top}, 10);
+      });
     } else {
       featuresWraperBlock.removeClass('owl-carousel');
       featuresWraperBlock.owlCarousel('destroy');
+      
+      navLiPortfolio.on('click', function (event) {
+        event.preventDefault();
+
+        var id = $(this).attr('href'),             
+            top = $(id).offset().top - 20;
+
+        $('body, html').animate({scrollTop: top}, 50);
+      });
     }
   });
   
@@ -191,9 +209,27 @@ $(function () {
             }
         }
       });
+    
+    navLiPortfolio.on('click', function (event) {
+        event.preventDefault();
+
+        var id = $(this).attr('href'),             
+            top = $(id).offset().top;
+
+        $('body, html').animate({scrollTop: top}, 50);
+      });
   } else {
     featuresWraperBlock.removeClass('owl-carousel');
     featuresWraperBlock.owlCarousel('destroy');
+    
+    navLiPortfolio.on('click', function (event) {
+        event.preventDefault();
+
+        var id = $(this).attr('href'),             
+            top = $(id).offset().top - 40;
+
+        $('body, html').animate({scrollTop: top}, 50);
+      });
   }
   
   pageHeaderButton.on('click', function () {

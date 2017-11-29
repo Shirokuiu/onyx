@@ -1,12 +1,12 @@
 .features {
   height: 100vh;
   margin-bottom: 86px;
-  padding-top: 10px;
+  padding-top: 50px;
   
-  background-image: url(%=static=%content/features-bg.svg);
+  background-image: url(%=static=%content/seo-features-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center bottom;
+  background-position: center center;
   .container {
     display: flex;
     flex-direction: column;
@@ -124,6 +124,8 @@
   display: block;
   width: 62px;
   height: 62px;
+  
+  .bg-svg(@features-bg-1);
   &::before {
     content: "";
     
@@ -137,7 +139,7 @@
   }
   &--marketing {
     &::before {
-      .bg-svg(@features-icon1);
+      .bg-svg(@features-iconn1);
     }
   }
   &--smm {

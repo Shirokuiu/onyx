@@ -77,6 +77,64 @@
   }
 }
 
+.page-footer__formSend {
+  position: relative;
+  top: -30px;
+  
+  text-align: center;
+  span {
+    position: relative;
+    
+    display: none;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    
+    background-color: #fff;
+    &::before {
+      content: '';
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      margin: auto;
+      
+      .bg-svg(@formSend-confirm);
+    }
+  }
+  &--hidden {
+    display: none;
+  }
+}
+
+.page-footer__formSend-headline {
+  .reset();
+  
+  margin-bottom: 3px;
+  
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-footer__formSend-title {
+  .reset();
+  
+  margin-bottom: 26px;
+  
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .page-footer__contactsLinks {
     bottom: 30px;
