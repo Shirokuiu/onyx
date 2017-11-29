@@ -28,7 +28,7 @@
                 </nav>
                 <div class="social">
                   <a href="https://www.instagram.com/onyx_agency/" target="_blank" class="social__link social__link--inst"></a>
-                  <a href="https://www.facebook.com/agency.onyx/" target="_blank" class="social__link social__link--fb"></a>
+                  <a href="https://www.facebook.com/agency.onyx/" target="_blank" class="social__link social__link--fb social__link--fbMobileFix"></a>
                 </div>
                 <button class="page-header__button" type="button"></button> 
               </div>
@@ -339,6 +339,8 @@
                     $(this).find("input").val("");
                     $('.contacts-form').addClass('contacts-form--hidden');
                     $('.page-footer__formSend').removeClass('page-footer__formSend--hidden');
+                    $('.contacts-form').delay(3000).removeClass('contacts-form--hidden');
+                    $('.page-footer__formSend').delay(3000).addClass('page-footer__formSend--hidden');
                     $("#form").trigger("reset");
                 });
                 return false;

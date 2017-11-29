@@ -248,6 +248,8 @@
                     $(this).find("input").val("");
                     $('.contacts-form').addClass('contacts-form--hidden');
                     $('.page-footer__formSend').removeClass('page-footer__formSend--hidden');
+                    $('.contacts-form').delay(3000).removeClass('contacts-form--hidden');
+                    $('.page-footer__formSend').delay(3000).addClass('page-footer__formSend--hidden');
                     $("#form").trigger("reset");
                 });
                 return false;

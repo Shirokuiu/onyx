@@ -77,20 +77,28 @@
     &--fb {
       &::before {
         .bg-svg(@fb) !important;
+        
+        background-position: -4px -1426px !important;
       }
       &:hover {
         &::before {
           .bg-svg(@fb-hover) !important;
+          
+          background-position: -4px -1558px !important;
         }
       }
     }
     &--inst {
       &::before {
         .bg-svg(@inst) !important;
+        
+        background-position: -4px -1382px !important;
       }
       &:hover {
         &::before {
           .bg-svg(@inst-hover) !important;
+          
+          background-position: -4px -1514px !important;
         }
       }
     }
@@ -144,20 +152,36 @@
       &--fb {
         &::before {
           .bg-svg(@fb-scroll);
+          
+          height: 42px;
+          
+          background-position: -4px -1602px;
         }
         &:hover {
           &::before {
-            .bg-svg(@fb-scroll-hover);
+            .bg-svg(@fb-scroll);
+            
+            height: 42px;
+          
+            background-position: -4px -1602px;
           }
         }
       }
       &--inst {
         &::before {
           .bg-svg(@inst-scroll);
+          
+          height: 42px;
+          
+          background-position: -4px -1646px;
         }
         &:hover {
           &::before {
-            .bg-svg(@inst-scroll-hover);
+            .bg-svg(@inst-scroll);
+            
+            height: 42px;
+          
+            background-position: -4px -1646px;
           }
         }
       }
@@ -202,20 +226,28 @@
       &--inst {
         &::before {
           .bg-svg(@inst-scroll);
+          
+          background-position: -4px -1646px;
         }
         &:hover {
           &::before {
-            .bg-svg(@inst-scroll-hover);
+            .bg-svg(@inst-scroll);
+            
+            background-position: -4px -1646px;
           }    
         }
       }
       &--fb {
         &::before {
           .bg-svg(@fb-scroll);
+          
+          background-position: -4px -1602px;
         }
         &:hover {
           &::before {
-            .bg-svg(@fb-scroll-hover);
+            .bg-svg(@fb-scroll);
+          
+            background-position: -4px -1602px;
           }
         }
       }
@@ -633,6 +665,7 @@
       }    
       .logo {
         position: relative;
+        top: 6px;
         z-index: 30;
         
         width: 80px;
@@ -643,7 +676,8 @@
       }  
       .social {
         position: relative;
-        top: -2px;
+        top: 1px;
+        left: -6px;
         
         width: auto;
         &--open {
@@ -668,6 +702,8 @@
         &--fb {
           &::before {
             .bg-svg(@fb-scroll-mobile);
+            
+            background-position: -4px -1922px !important;
           }
           &:hover {
             &::before {
@@ -690,6 +726,39 @@
         &::before,
         &::after {
           background-color: #000000;
+        }
+      }
+    }
+  }
+  
+  .social--open {
+    .social__link {
+      &--fb {
+        &::before {
+          background-position: -4px -1426px;
+        }
+      }
+    }
+  }
+  
+  .social__link {
+    &--fbMobileFix {
+      &::before {
+        background-position: -4px -1426px;
+      }
+    }
+  }
+  
+  .footer-nav {
+    .social__link {
+      &--fb {
+        &::before {
+          background-position: -4px -1428px !important;
+        }
+      }
+      &--inst {
+        &::before {
+          background-position: -4px -1384px !important;
         }
       }
     }
@@ -727,6 +796,7 @@
       .social {
         position: relative;
         top: -2px;
+        left: -4px;
         
         width: auto;
         &--open {
@@ -798,6 +868,8 @@
         &--fb {
           &::before {
             background-image: url(../img/svg-sprite/sprite.svg) !important;
+            
+            
           }
         }
         &--inst {
