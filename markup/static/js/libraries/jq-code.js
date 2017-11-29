@@ -164,7 +164,6 @@ $(function () {
       });
     } else {
       featuresWraperBlock.removeClass('owl-carousel');
-      featuresWraperBlock.owlCarousel('destroy');
       
       navLiPortfolio.on('click', function (event) {
         event.preventDefault();
@@ -190,7 +189,6 @@ $(function () {
       });
   } else {
     featuresWraperBlock.removeClass('owl-carousel');
-    featuresWraperBlock.owlCarousel('destroy');
     
     navLiPortfolio.on('click', function (event) {
         event.preventDefault();
