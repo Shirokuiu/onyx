@@ -154,21 +154,6 @@ $(function () {
     if (width < 768) {
       featuresBlockDisabled.remove();
       
-      featuresWraperBlock.addClass('owl-carousel');
-      featuresWraperBlock.owlCarousel({
-        loop: true,
-        smartSpeed: 1500,
-        dotsEach: true,
-        responsive:{
-            0:{
-                items:1.25
-            },
-            767:{
-                items:1.25
-            }
-        }
-      });
-      
       navLiPortfolio.on('click', function (event) {
         event.preventDefault();
 
@@ -194,21 +179,6 @@ $(function () {
   
   if (width < 768) {
     featuresBlockDisabled.remove();
-    
-    featuresWraperBlock.addClass('owl-carousel');
-    featuresWraperBlock.owlCarousel({
-        loop: true,
-        smartSpeed: 1500,
-        dotsEach: true,
-        responsive:{
-            0:{
-                items:1.25
-            },
-            767:{
-                items:1.25
-            }
-        }
-      });
     
     navLiPortfolio.on('click', function (event) {
         event.preventDefault();

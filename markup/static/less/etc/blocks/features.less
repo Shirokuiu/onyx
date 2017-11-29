@@ -209,44 +209,15 @@
   
   .features__wraperBlock {
     padding-bottom: 39px;
-    .owl-stage-outer {
-      min-height: 468px;
-    }
-    .owl-dots {
-      position: relative;
-      top: 39px;
-      
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .owl-dot {
-      span {
-        display: block;
-        width: 7px;
-        height: 7px;
-        
-        background-color: rgba(17, 64, 88, 0.42);
-        
-        border-radius: 50%;
-      }
-      &.active {
-        span {
-          width: 30px;
-          height: 2px;
-          
-          background-color: #979797;
-          
-          border-radius: 0;
-        }
-      }
-    }
   }
   
   .features__block {
     box-sizing: border-box;
     width: auto;
-    height: 450px;
+    height: 360px;
+    &:nth-last-child(-n+2) {
+      margin-bottom: 41px;
+    }
     &--disabled {
       display: initial;
     }
