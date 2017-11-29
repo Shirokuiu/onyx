@@ -1,1 +1,34 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 61.58 61.58"><defs><radialGradient id="radial-gradient" cx="-269.04" cy="421.81" r="0.91" gradientTransform="matrix(61.58, 0, 0, -61.58, 16597.98, 25990.78)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0a6972"/><stop offset="1" stop-color="#16193f"/></radialGradient></defs><title>features-icon5</title><g id="Page-1"><g id="INDEX-PAGE"><g id="SERVICES"><g id="Group-6"><g id="PERK-1-Copy-4"><g id="Group-4"><g id="Group-23"><circle id="Oval" cx="30.79" cy="30.79" r="30.79" style="fill:url(#radial-gradient)"/><g id="Group"><path id="Shape" d="M47.84,15.8H16.72a1.51,1.51,0,0,0-1.51,1.51V48.44A1.51,1.51,0,0,0,16.72,50H47.85a1.51,1.51,0,0,0,1.51-1.51V17.31A1.51,1.51,0,0,0,47.84,15.8Zm-1.51,3V39.16l-5.94-5A1.13,1.13,0,0,0,39.08,34l-5.72,3.33-6.14-6.62a1.13,1.13,0,0,0-1.51-.2l-7.44,6.7V18.83H46.33Zm-28.1,28.1V40l8.66-6.28,5.29,6.54a1.13,1.13,0,0,0,1.45.26l5.86-3.42,6.8,5.76v4H18.22Z" transform="translate(-0.17 -0.23)" style="fill:#082e3c"/><path id="Shape-2" data-name="Shape" d="M37,29.78a3.86,3.86,0,1,0-3.86-3.86A3.86,3.86,0,0,0,37,29.78h0Zm0-5.46a1.6,1.6,0,1,1-1.6,1.6,1.6,1.6,0,0,1,1.6-1.6h0Z" transform="translate(-0.17 -0.23)" style="fill:#082e3c"/></g><rect id="Rectangle-path" x="15.79" y="16.32" width="31.13" height="31.13" style="fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:4px"/><polygon id="Shape-3" data-name="Shape" points="15.53 39.12 25.41 31.2 32.17 38.58 38.73 34.75 46.79 41.58 46.79 46.95 15.53 46.95 15.53 39.12" style="fill:#fff;stroke:#fff;stroke-linejoin:round;stroke-width:3px"/><circle id="Oval-2" data-name="Oval" cx="36.13" cy="24.92" r="2.73" style="fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:3px"/></g></g></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50.9333372%" cy="28.2561585%" fx="50.9333372%" fy="28.2561585%" r="90.7054215%" id="radialGradient-1">
+            <stop stop-color="#0A6972" offset="0%"></stop>
+            <stop stop-color="#16193F" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="INDEX-PAGE" transform="translate(-814.000000, -1627.000000)">
+            <g id="SERVICES" transform="translate(0.000000, 900.000000)">
+                <g id="Group-6" transform="translate(535.000000, 513.000000)">
+                    <g id="PERK-1-Copy-4">
+                        <g id="Group-4" transform="translate(279.000000, 214.000000)">
+                            <g id="Group-23">
+                                <circle id="Oval" fill="url(#radialGradient-1)" fill-rule="nonzero" cx="30.9546341" cy="31.0226829" r="30.7882927"></circle>
+                                <g id="Group" transform="translate(15.121951, 15.121951)" fill-rule="nonzero" fill="#082E3C">
+                                    <path d="M32.7163415,0.680487805 L1.59536585,0.680487805 C0.760203549,0.680487805 0.0831707317,1.35752062 0.0831707317,2.19268293 L0.0831707317,33.3212195 C0.0831707317,34.1563818 0.760203549,34.8334146 1.59536585,34.8334146 L32.7239024,34.8334146 C33.5590647,34.8334146 34.2360976,34.1563818 34.2360976,33.3212195 L34.2360976,2.19268293 C34.2361026,1.79031038 34.075745,1.40452734 33.790516,1.12071739 C33.505287,0.836907442 33.118709,0.678475942 32.7163415,0.680487805 Z M31.2041463,3.70487805 L31.2041463,24.0363415 L25.2612195,19.0007317 C24.8936342,18.6887346 24.3689703,18.6432435 23.9531707,18.8873171 L18.2370732,22.2217073 L12.097561,15.5982927 C11.7214691,15.150634 11.066699,15.0622401 10.5853659,15.3941463 L3.14536585,22.0931707 L3.14536585,3.70487805 L31.2041463,3.70487805 Z M3.1,31.8090244 L3.1,24.8982927 L11.7573171,18.6226829 L17.05,25.1629268 C17.4025182,25.5969161 18.0187277,25.709246 18.5017073,25.427561 L24.3614634,22.01 L31.1663415,27.7714634 L31.1663415,31.8090244 L3.1,31.8090244 Z" id="Shape"></path>
+                                    <path d="M21.9268293,14.6531707 C24.060669,14.6531707 25.7904878,12.9233519 25.7904878,10.7895122 C25.7904878,8.65567251 24.060669,6.92585366 21.9268293,6.92585366 C19.7929896,6.92585366 18.0631707,8.65567251 18.0631707,10.7895122 C18.067331,12.9216263 19.7947152,14.6490105 21.9268293,14.6531707 L21.9268293,14.6531707 Z M21.9268293,9.19414634 C22.8079255,9.19414634 23.5221951,9.90841596 23.5221951,10.7895122 C23.5221951,11.6706084 22.8079255,12.384878 21.9268293,12.384878 C21.045733,12.384878 20.3314634,11.6706084 20.3314634,10.7895122 C20.3314634,9.90841596 21.045733,9.19414634 21.9268293,9.19414634 L21.9268293,9.19414634 Z" id="Shape"></path>
+                                </g>
+                                <rect id="Rectangle-path" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" x="15.9612195" y="16.5585366" width="31.1285366" height="31.1285366"></rect>
+                                <polygon id="Shape" stroke="#FFFFFF" stroke-width="3" fill="#FFFFFF" fill-rule="nonzero" stroke-linejoin="round" points="15.6965854 39.354878 25.5787805 31.4385366 32.3382927 38.8104878 38.8936585 34.9846341 46.9536585 41.8121951 46.9536585 47.1804878 15.6965854 47.1804878"></polygon>
+                                <circle id="Oval" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" cx="36.3002439" cy="25.1553659" r="2.7295122"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
