@@ -160,6 +160,20 @@
   color: #000000;
 }
 
+.smm__reviews {
+  height: 1288px;
+  
+  background-color: #ffffff;
+  
+  box-shadow: -7px 0 14px 9px rgba(0, 0, 0, 0.01);
+}
+
+.smm__reviews-slider-slide {
+  .slick-slide {
+    width: 364px;
+  }
+}
+
 .smm__reviews-slider-slide-headline {
   .reset();
   
@@ -226,4 +240,234 @@
   line-height: 34px;
   font-weight: 300;
   color: #000000;
+}
+
+.smm__question {
+  position: relative;
+  
+  padding-top: 92px;
+  padding-bottom: 189px;
+  
+  background-image: url(%=static=%content/smm-question-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.smm__question-slider {
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-next {
+    position: absolute;
+    left: 42%;
+    bottom: -125px;
+    
+    width: 194px;
+    
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 39px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0e4e61;
+
+    border-radius: 88px;
+    outline: none;
+  }
+}
+
+.smm__question-slider-slide-headline,
+.smm__question-slider-slide-title,
+.smm__question-slider-slide-text {
+  .reset();
+}
+
+.smm__question-slider-slide-headline {
+  margin-bottom: 57px;
+  
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.smm__question-slider-slide-title {
+  margin-bottom: 20px;
+  
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.smm__question-slider-slide-text {
+  width: 540px;
+  margin: 0 auto;
+  
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.smm__price {
+  padding-top: 91px;
+  
+  background-color: #ffffff;
+}
+
+.smm__price-headline {
+  .reset();
+  
+  margin-bottom: 56px;
+  
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #16193f;
+  text-align: center;
+}
+
+.smm__price-cart {
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+}
+
+.smm__price-cart-blockMore {
+  &.ui-widget {
+    font-family: "Aktiv Grotesk Corp", sans-serif;
+    font-size: 18px;
+  }
+  .smm__price-cart-blockMore-text {
+    &.ui-state-default {
+      background-color: transparent;
+      
+      border: none;
+      outline: none;
+    }
+    &.ui-accordion-header {
+      .reset();
+      
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 39px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #0e4e61;
+
+      cursor: pointer;
+    }
+    &.ui-state-active {
+      background-color: transparent;
+      
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.smm__price-cart-blockPrice-title,
+.smm__price-cart-blockPrice-priceText {
+  .reset();
+}
+
+.smm__price-cart-blockPrice-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #16193f;
+}
+
+.smm__price-cart-blockPrice-priceText {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #16193f;
+}
+
+.smm__price-cart-blockText-list {
+  .reset();
+  
+  list-style: none;
+}
+
+.smm__price-cart-blockText-items {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.smm__price-cart-blockMore-accordionWrap {
+  display: flex;
+  padding-top: 53px;
+  padding-left: 50px;
+  
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.03);
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(251, 251, 251, 0.25);
+}
+
+.smm__price-cart-blockMore-accordion-list {
+  .reset();
+  
+  width: 304px;
+  margin-right: 45px;
+  
+  list-style: none;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.smm__price-cart-blockMore-accordion-items {
+  position: relative;
+  
+  margin-bottom: 17px;
+  padding-left: 12px;
+  
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 11px;
+    left: 0;
+    
+    width: 2px;
+    height: 2px;
+    
+    background-color: #000000;
+  }
+}
+
+.smm__price-cart-priceButton {
+  .reset();
+  
+  width: 195px;
+  
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  
+  background-color: transparent;
+  
+  box-shadow: 3px 2px 8px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 88px;
+  background-image: radial-gradient(circle 195px at 585.05% 8628.57%, #0a6972 0%, #16193f 100%);
+  border: none;
+  outline: none;
 }

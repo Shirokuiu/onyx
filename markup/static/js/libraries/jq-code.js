@@ -145,8 +145,13 @@ $(function () {
   });
   
   var portfolioCart = $('.portfolio__cart');
-  var featuresWraperBlock = $('.features__wraperBlock');
   var featuresBlockDisabled = $('.features__block--disabled');
+  var smmReviewsSlider = $('.smm__reviews-slider');
+  var smmQuestionSlider = $('.smm__question-slider');
+  
+  smmQuestionSlider.slick({
+    nextArrow: '<button type="button" class="slick-next">ДРУГОЙ ВОПРОС</button>'
+  });
   
   $(window).resize(function () {
     var width = $(window).outerWidth();
@@ -163,8 +168,6 @@ $(function () {
         $('body, html').animate({scrollTop: top}, 10);
       });
     } else {
-      featuresWraperBlock.removeClass('owl-carousel');
-      
       navLiPortfolio.on('click', function (event) {
         event.preventDefault();
 
@@ -188,8 +191,6 @@ $(function () {
         $('body, html').animate({scrollTop: top}, 50);
       });
   } else {
-    featuresWraperBlock.removeClass('owl-carousel');
-    
     navLiPortfolio.on('click', function (event) {
         event.preventDefault();
 
@@ -276,4 +277,10 @@ $(function () {
     pageFooter.removeClass('page-footer--rotate');
   }
   
+  var smmPriceCartBlockMore = $('.smm__price-cart-blockMore');
+  
+  smmPriceCartBlockMore.accordion({
+    collapsible: true,
+    active: false
+  });
 });
