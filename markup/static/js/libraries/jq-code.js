@@ -276,11 +276,4 @@ $(function () {
     pageHeader.removeClass('page-header--rotate');
     pageFooter.removeClass('page-footer--rotate');
   }
-  
-  var smmPriceCartBlockMore = $('.smm__price-cart-blockMore');
-  
-  smmPriceCartBlockMore.accordion({
-    collapsible: true,
-    active: false
-  });
 });
