@@ -60,6 +60,15 @@ $(function () {
     $('body, html').animate({scrollTop: top}, 1000);
   });
   
+  $('#contacts').on('click', function (event) {
+    event.preventDefault();
+    
+    var id = $(this).attr('href'),             
+        top = $(id).offset().top;
+    
+    $('body, html').animate({scrollTop: top}, 10);
+  });
+  
   $('.page-header__link').on('click', function (event) {
     event.preventDefault();
     
@@ -276,4 +285,10 @@ $(function () {
     pageHeader.removeClass('page-header--rotate');
     pageFooter.removeClass('page-footer--rotate');
   }
+  
+  var smmPriceCartBlockMoreText = $('.smm__price-cart-blockMore-text');
+  
+  smmPriceCartBlockMoreText.on('click', function () {
+    $(this).toggleClass('smm__price-cart-blockMore-text--active').parent().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible');
+  });
 });

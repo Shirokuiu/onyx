@@ -51,9 +51,11 @@
     top: -11px;
     left: 0;
     
-    .bg-svg(@page-footer__contacts-tel);
+    width: 42px;
+    height: 42px;
     
-    background-position: -4px -1290px;
+    background-image: url(%=static=%content/page-footer__contacts-tel.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -75,9 +77,11 @@
     top: -10px;
     left: 0;
     
-    .bg-svg(@page-footer__contacts-mail);
+    width: 42px;
+    height: 42px;
     
-    background-position: -4px -1336px;
+    background-image: url(%=static=%content/page-footer__contacts-mail.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -190,7 +194,8 @@
     &::before {
       top: -7px;
       
-      .bg-svg(@page-footer__contacts-tel-mobile);
+      background-image: url(%=static=%content/page-footer__contacts-tel-mobile.svg);
+      background-repeat: no-repeat;
     }
   }
   
@@ -203,7 +208,8 @@
     font-size: 14px;
     line-height: 16px;
     &::before {
-      .bg-svg(@page-footer__contacts-mail-mobile);
+      background-image: url(%=static=%content/page-footer__contacts-mail-mobile.svg);
+      background-repeat: no-repeat;
     }
   }
 }

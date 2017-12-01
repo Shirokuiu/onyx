@@ -333,43 +333,18 @@
 }
 
 .smm__price-cart {
-  display: flex;
-  
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.03);
   border-radius: 5px;
 }
 
-.smm__price-cart-blockMore {
-  &.ui-widget {
-    font-family: "Aktiv Grotesk Corp", sans-serif;
-    font-size: 18px;
-  }
-  .smm__price-cart-blockMore-text {
-    &.ui-state-default {
-      background-color: transparent;
-      
-      border: none;
-      outline: none;
-    }
-    &.ui-accordion-header {
-      .reset();
-      
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 39px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #0e4e61;
-
-      cursor: pointer;
-    }
-    &.ui-state-active {
-      background-color: transparent;
-      
-      border: none;
-      outline: none;
-    }
-  }
+.smm__price-cart-blocksWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 65px;
+  padding-right: 48px;
+  padding-bottom: 32px;
 }
 
 .smm__price-cart-blockPrice-title,
@@ -405,26 +380,68 @@
   color: #000000;
 }
 
+.smm__price-cart-blockMore-text {
+  .reset();
+  
+  position: relative;
+  left: 90px;
+  
+  padding-right: 21px;
+  
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #0e4e61;
+  letter-spacing: 2px;
+  
+  cursor: pointer;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    right: 0;
+    
+    width: 10px;
+    height: 4px;
+    margin: auto;
+    
+    background-image: url(%=static=%content/smm__price-cart-blockMore-text.svg);
+    background-repeat: no-repeat;
+    
+    transition: 0.2s ease;
+  }
+  &--active {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .smm__price-cart-blockMore-accordionWrap {
-  display: flex;
+  display: none;
+  justify-content: space-between;
   padding-top: 53px;
   padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 58px;
   
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.03);
   border-radius: 0 0 5px 5px;
   background-color: rgba(251, 251, 251, 0.25);
+  &--visible {
+    display: flex; 
+  }
 }
 
 .smm__price-cart-blockMore-accordion-list {
   .reset();
   
   width: 304px;
-  margin-right: 45px;
   
   list-style: none;
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .smm__price-cart-blockMore-accordion-items {
