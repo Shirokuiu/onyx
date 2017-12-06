@@ -60,14 +60,14 @@ $(function () {
     $('body, html').animate({scrollTop: top}, 1000);
   });
   
-  $('#contacts').on('click', function (event) {
+  /*$('#contacts').on('click', function (event) {
     event.preventDefault();
     
     var id = $(this).attr('href'),             
         top = $(id).offset().top;
     
     $('body, html').animate({scrollTop: top}, 10);
-  });
+  });*/
   
   $('.page-header__link').on('click', function (event) {
     event.preventDefault();
@@ -286,11 +286,9 @@ $(function () {
     pageFooter.removeClass('page-footer--rotate');
   }
   
-  var smmPriceCartBlockMore = $('.smm__price-cart-blockMore');
   var smmPriceCartBlockMoreText = $('.smm__price-cart-blockMore-text');
-  var smmPriceCartBlockMoreAccordionWrap = $('.smm__price-cart-blockMore-accordionWrap');
   
-  smmPriceCartBlockMore.on('click', function () {
-    $(this).parents().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible')
+  smmPriceCartBlockMoreText.on('click', function () {
+    $(this).toggleClass('smm__price-cart-blockMore-text--active').parent().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible');
   });
 });
