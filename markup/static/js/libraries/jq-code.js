@@ -286,9 +286,11 @@ $(function () {
     pageFooter.removeClass('page-footer--rotate');
   }
   
+  var smmPriceCartBlockMore = $('.smm__price-cart-blockMore');
   var smmPriceCartBlockMoreText = $('.smm__price-cart-blockMore-text');
+  var smmPriceCartBlockMoreAccordionWrap = $('.smm__price-cart-blockMore-accordionWrap');
   
-  smmPriceCartBlockMoreText.on('click', function () {
-    $(this).toggleClass('smm__price-cart-blockMore-text--active').parent().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible');
+  smmPriceCartBlockMore.on('click', function () {
+    $(this).parents().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible')
   });
 });

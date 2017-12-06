@@ -1,7 +1,6 @@
 .smm {
   margin-bottom: 91px;
   padding-top: 90px;
-  padding-bottom: 90px;
   
   background-color: #f3f6f8;
 }
@@ -271,8 +270,11 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #0e4e61;
+    
+    background-color: #ffffff;
 
     border-radius: 88px;
+    border: none;
     outline: none;
   }
 }
@@ -333,13 +335,17 @@
 }
 
 .smm__price-cart {
+  margin-bottom: 18px;
+  
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.03);
   border-radius: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .smm__price-cart-blocksWrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 32px;
   padding-left: 65px;
@@ -352,12 +358,33 @@
   .reset();
 }
 
+.smm__price-cart-blockPrice {
+  width: 160px;
+  margin-right: 174px;
+}
+
 .smm__price-cart-blockPrice-title {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #16193f;
+  &--pro {
+    position: relative;
+    &::before {
+      content: 'BEST SELLER';
+      
+      position: absolute;
+      top: -23px;
+      left: 0;
+      
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #111230;
+    }
+  }
 }
 
 .smm__price-cart-blockPrice-priceText {
@@ -380,11 +407,15 @@
   color: #000000;
 }
 
+.smm__price-cart-blockMore {
+  margin-left: auto;
+  margin-right: 54px;
+}
+
 .smm__price-cart-blockMore-text {
   .reset();
   
   position: relative;
-  left: 90px;
   
   padding-right: 21px;
   
@@ -421,18 +452,28 @@
 }
 
 .smm__price-cart-blockMore-accordionWrap {
-  display: none;
+  display: flex;
   justify-content: space-between;
-  padding-top: 53px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 58px;
+  height: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
   
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.03);
   border-radius: 0 0 5px 5px;
   background-color: rgba(251, 251, 251, 0.25);
   &--visible {
-    display: flex; 
+    height: auto;
+    padding-top: 53px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 58px;
+    
+    transition: all 0.5s ease;
+    .smm__price-cart-blockMore-accordion-items {
+      font-size : 14px;
+    }
   }
 }
 
@@ -450,7 +491,8 @@
   margin-bottom: 17px;
   padding-left: 12px;
   
-  font-size: 14px;
+  font-size: 0;
+  //font-size: 14px;
   line-height: 26px;
   font-weight: 300;
   &:last-child {
@@ -463,6 +505,7 @@
     top: 11px;
     left: 0;
     
+    display: none;
     width: 2px;
     height: 2px;
     
