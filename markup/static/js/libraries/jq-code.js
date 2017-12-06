@@ -162,10 +162,15 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next">ДРУГОЙ ВОПРОС</button>'
   });
   
+  var seoPriceBlockMobileButton = $('.seo__price-block-headlineWrap');
+  var seoPriceBlockList = $('.seo__price-block-list');
+  
+  
+  
   $(window).resize(function () {
     var width = $(window).outerWidth();
     
-    if (width < 768) {
+    if (width <= 768) {
       featuresBlockDisabled.remove();
       
       navLiPortfolio.on('click', function (event) {
@@ -176,6 +181,10 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 10);
       });
+      
+      seoPriceBlockMobileButton.on('click', function () {
+        $(this).parent().find('.seo__price-block-list').toggleClass('seo__price-block-list--mobileVisible');
+      });
     } else {
       navLiPortfolio.on('click', function (event) {
         event.preventDefault();
@@ -185,10 +194,12 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 50);
       });
+      
+      seoPriceBlockMobileButton.unbind('click');
     }
   });
   
-  if (width < 768) {
+  if (width <= 768) {
     featuresBlockDisabled.remove();
     
     navLiPortfolio.on('click', function (event) {
@@ -199,6 +210,10 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 50);
       });
+    
+    seoPriceBlockMobileButton.on('click', function () {
+      $(this).parent().find('.seo__price-block-list').toggleClass('seo__price-block-list--mobileVisible');
+    });
   } else {
     navLiPortfolio.on('click', function (event) {
         event.preventDefault();
@@ -208,6 +223,8 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 50);
       });
+    
+    seoPriceBlockMobileButton.unbind('click');
   }
   
   pageHeaderButton.on('click', function () {

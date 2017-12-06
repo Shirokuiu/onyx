@@ -248,6 +248,8 @@
 }
 
 .seo__price-block-mobileButton {
+  display: none;
+  
   font-size: 12px;
   font-weight: 700;
   line-height: 39px;
@@ -452,6 +454,13 @@
     display: none;
     
     background-color: transparent;
+    &--mobileVisible {
+      display: block;
+    }
+  }
+  
+  .seo__price-block-mobileButton {
+    display: block;
   }
   
   .seo__price-block-buttonWrap {
