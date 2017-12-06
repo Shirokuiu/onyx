@@ -125,7 +125,8 @@
   width: 62px;
   height: 62px;
   
-  .bg-svg(@features-bg-1);
+  background-image: url(%=static=%content/features-bg-1.svg);
+  background-repeat: no-repeat;
   &::before {
     content: "";
     
@@ -214,7 +215,7 @@
   .features__block {
     box-sizing: border-box;
     width: auto;
-    height: 360px;
+    height: auto;
     &:nth-last-child(-n+2) {
       margin-bottom: 41px;
     }

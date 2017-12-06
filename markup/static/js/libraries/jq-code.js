@@ -60,6 +60,15 @@ $(function () {
     $('body, html').animate({scrollTop: top}, 1000);
   });
   
+  /*$('#contacts').on('click', function (event) {
+    event.preventDefault();
+    
+    var id = $(this).attr('href'),             
+        top = $(id).offset().top;
+    
+    $('body, html').animate({scrollTop: top}, 10);
+  });*/
+  
   $('.page-header__link').on('click', function (event) {
     event.preventDefault();
     
@@ -145,13 +154,23 @@ $(function () {
   });
   
   var portfolioCart = $('.portfolio__cart');
-  var featuresWraperBlock = $('.features__wraperBlock');
   var featuresBlockDisabled = $('.features__block--disabled');
+  var smmReviewsSlider = $('.smm__reviews-slider');
+  var smmQuestionSlider = $('.smm__question-slider');
+  
+  smmQuestionSlider.slick({
+    nextArrow: '<button type="button" class="slick-next">ДРУГОЙ ВОПРОС</button>'
+  });
+  
+  var seoPriceBlockMobileButton = $('.seo__price-block-headlineWrap');
+  var seoPriceBlockList = $('.seo__price-block-list');
+  
+  
   
   $(window).resize(function () {
     var width = $(window).outerWidth();
     
-    if (width < 768) {
+    if (width <= 768) {
       featuresBlockDisabled.remove();
       
       navLiPortfolio.on('click', function (event) {
@@ -162,9 +181,11 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 10);
       });
-    } else {
-      featuresWraperBlock.removeClass('owl-carousel');
       
+      seoPriceBlockMobileButton.on('click', function () {
+        $(this).parent().find('.seo__price-block-list').toggleClass('seo__price-block-list--mobileVisible');
+      });
+    } else {
       navLiPortfolio.on('click', function (event) {
         event.preventDefault();
 
@@ -173,10 +194,12 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 50);
       });
+      
+      seoPriceBlockMobileButton.unbind('click');
     }
   });
   
-  if (width < 768) {
+  if (width <= 768) {
     featuresBlockDisabled.remove();
     
     navLiPortfolio.on('click', function (event) {
@@ -187,9 +210,11 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 50);
       });
-  } else {
-    featuresWraperBlock.removeClass('owl-carousel');
     
+    seoPriceBlockMobileButton.on('click', function () {
+      $(this).parent().find('.seo__price-block-list').toggleClass('seo__price-block-list--mobileVisible');
+    });
+  } else {
     navLiPortfolio.on('click', function (event) {
         event.preventDefault();
 
@@ -198,6 +223,8 @@ $(function () {
 
         $('body, html').animate({scrollTop: top}, 50);
       });
+    
+    seoPriceBlockMobileButton.unbind('click');
   }
   
   pageHeaderButton.on('click', function () {
@@ -276,4 +303,9 @@ $(function () {
     pageFooter.removeClass('page-footer--rotate');
   }
   
+  var smmPriceCartBlockMoreText = $('.smm__price-cart-blockMore-text');
+  
+  smmPriceCartBlockMoreText.on('click', function () {
+    $(this).toggleClass('smm__price-cart-blockMore-text--active').parent().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible');
+  });
 });

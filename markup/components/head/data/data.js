@@ -5,8 +5,14 @@ head: {
         indexMeta: true,
         caseMeta: false
     },
-    'case': {
-      title: 'Работы',
+    'smm': {
+      title: 'SMM',
+      useSocialMetaTags: true,
+      indexMeta: false,
+      caseMeta: true
+    },
+    'seo': {
+      title: 'SEO',
       useSocialMetaTags: true,
       indexMeta: false,
       caseMeta: true
