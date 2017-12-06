@@ -1,5 +1,4 @@
 .smm {
-  margin-bottom: 91px;
   padding-top: 90px;
   
   background-color: #f3f6f8;
@@ -160,11 +159,16 @@
 }
 
 .smm__reviews {
+  position: relative;
+  right: -110px;
+  top: 115px;
+  
   height: 1288px;
   
   background-color: #ffffff;
   
   box-shadow: -7px 0 14px 9px rgba(0, 0, 0, 0.01);
+  border-radius: 830px 80px 80px 550px;
 }
 
 .smm__reviews-slider-slide {
@@ -318,6 +322,7 @@
 
 .smm__price {
   padding-top: 91px;
+  padding-bottom: 72px;
   
   background-color: #ffffff;
 }
@@ -384,6 +389,9 @@
       letter-spacing: 1px;
       color: #111230;
     }
+  }
+  &--lineHeight {
+    line-height: 36px;
   }
 }
 
@@ -463,6 +471,8 @@
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.03);
   border-radius: 0 0 5px 5px;
   background-color: rgba(251, 251, 251, 0.25);
+  
+  transition: all 0.5s ease;
   &--visible {
     height: auto;
     padding-top: 53px;
@@ -516,20 +526,21 @@
 .smm__price-cart-priceButton {
   .reset();
   
-  width: 195px;
+  width: 200px;
+  padding-top: 23px;
+  padding-bottom: 27px;
   
   font-size: 12px;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 2px;
   
   background-color: transparent;
-  
-  box-shadow: 3px 2px 8px 3px rgba(0, 0, 0, 0.03);
-  border-radius: 88px;
-  background-image: radial-gradient(circle 195px at 585.05% 8628.57%, #0a6972 0%, #16193f 100%);
+  background-image: url(%=static=%content/smm-button.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
   border: none;
   outline: none;
 }

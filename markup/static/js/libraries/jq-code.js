@@ -303,9 +303,19 @@ $(function () {
     pageFooter.removeClass('page-footer--rotate');
   }
   
-  var smmPriceCartBlockMoreText = $('.smm__price-cart-blockMore-text');
+  var smmPriceCartBlockMoreText = $('.smm__price-cart-blockMore');
   
   smmPriceCartBlockMoreText.on('click', function () {
-    $(this).toggleClass('smm__price-cart-blockMore-text--active').parent().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible');
+    $(this).toggleClass('smm__price-cart-blockMore--clicked');
+    
+    if ($(this).hasClass('smm__price-cart-blockMore--clicked')) {
+      $(this).html('<p class="smm__price-cart-blockMore-text">Свернуть</p>')
+      $(this).find('.smm__price-cart-blockMore-text').addClass('smm__price-cart-blockMore-text--active');
+    } else {
+      $(this).html('<p class="smm__price-cart-blockMore-text">Подробнее</p>')
+      $(this).find('.smm__price-cart-blockMore-text').removeClass('smm__price-cart-blockMore-text--active');
+    }
+    
+    $(this).parent().parent().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible');
   });
 });
