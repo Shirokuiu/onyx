@@ -1,7 +1,13 @@
 .smm {
+  margin-bottom: 98px;
   padding-top: 90px;
+  padding-bottom: 72px;
   
   background-color: #f3f6f8;
+  &--price {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 .smm__featuresBlocksWrap {
@@ -86,6 +92,10 @@
   .bg-svg(@smm-features-like);
 }
 
+.smm__ourSkills {
+  width: 460px;
+}
+
 .smm__ourSkills-headline {
   .reset();
   
@@ -160,20 +170,35 @@
 
 .smm__reviews {
   position: relative;
-  right: -110px;
-  top: 115px;
   
-  height: 1288px;
+  overflow: hidden;
+  width: 810px;
   
-  background-color: #ffffff;
-  
-  box-shadow: -7px 0 14px 9px rgba(0, 0, 0, 0.01);
-  border-radius: 830px 80px 80px 550px;
+  background-image: url(%=static=%content/smm__reviews-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .smm__reviews-slider-slide {
-  .slick-slide {
-    width: 364px;
+  width: 365px;
+  &--prevSlide {
+    position: absolute;
+    top: 291px;
+    left: 529px;
+    
+    opacity: 0.3;
+  }
+  &--activeSlide {
+    position: absolute;
+    top: 650px;
+    left: 295px;
+  }
+  &--nextSlide {
+    position: absolute;
+    left: 540px;
+    bottom: 282px;
+    
+    opacity: 0.3;
   }
 }
 
@@ -193,7 +218,7 @@
     
     position: absolute;
     top: 0;
-    left: 0;
+    left: -148px;
     
     width: 90px;
     height: 90px;
@@ -243,6 +268,33 @@
   line-height: 34px;
   font-weight: 300;
   color: #000000;
+}
+
+.smm__reviews-slider-controls {
+  position: absolute;
+  top: 767px;
+  left: 100px;
+  
+  display: flex;
+  justify-content: space-between;
+  width: 677px;
+}
+
+.smm__reviews-slider-control {
+  .reset();
+  
+  width: 27px;
+  height: 52px;
+  
+  background-color: transparent;
+  background-image: url(%=static=%content/smm__reviews-control.svg);
+  background-repeat: no-repeat;
+  
+  border: none;
+  outline: none;
+  &--next {
+    transform: rotate(180deg);
+  }
 }
 
 .smm__question {
@@ -543,4 +595,149 @@
   background-position: center center;
   border: none;
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .smm {
+    margin-bottom: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    background-color: transparent;
+  }
+  
+  .smm__featuresBlocksWrap {
+    flex-direction: column;
+  }
+  
+  .smm__featuresBlock {
+    &--content {
+      width: auto;
+      .smm__featuresBlock-content {
+        margin-bottom: 41px;
+      }
+    }
+    &--img {
+      position: static;
+      
+      order: 2;
+      margin-left: 0;
+      margin-right: 0;
+      .smm__featuresBlock-heart,
+      .smm__featuresBlock-like {
+        display: none;
+      }
+    }
+    &--mobileOrder1 {
+      order: 1;
+    }
+    &--mobileOrder2 {
+      order: 2;
+      margin-bottom: 41px;
+    }
+    &--mobileOrder3 {
+      order: 3;
+    }
+  }
+  
+  .smm__featuresBlock-content {
+    &--textAlignRight {
+      .smm__featuresBlock-headline {
+        text-align: center;
+      }
+      .smm__featuresBlock-text {
+        text-align: center;
+      }
+    }
+  }
+  
+  .smm__featuresBlock-headline {
+    text-align: center;
+  }
+  
+  .smm__featuresBlock-text {
+    text-align: center;
+  }
+  
+  .smm__ourSkills {
+    width: auto;
+  }
+  
+  .smm__reviews {
+    width: auto;
+  }
+  
+  .smm__ourSkills-headline {
+    text-align: center;
+  }
+  
+  .smm__ourSkills-list {
+    width: auto;
+    margin-left: 0;
+  }
+  
+  .smm__ourSkills-items {
+    padding-top: 87px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 20px;
+    
+    box-shadow: 3px 2px 8px 3px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  
+  .smm__ourSkills-itemHeadline {
+    &::before {
+      top: -65px;
+      left: 0;
+      right: 0;
+      
+      margin: auto;
+    }
+  }
+  
+  .smm__reviews-slider-slide {
+    position: static;
+    &--prevSlide {
+      display: none;
+      padding-top: 120px;
+      
+      opacity: 1;
+    }
+    &--activeSlide {
+      padding-top: 120px;
+    }
+    &--nextSlide {
+      display: none;
+      padding-top: 120px;
+      
+      opacity: 1;
+    }
+  }
+  
+  .smm__reviews-slider {
+    padding-top: 52px;
+    padding-bottom: 40px;
+  }
+  
+  .smm__reviews-slider-slide-headline,
+  .smm__reviews-slider-slide-title,
+  .smm__reviews-slider-slide-text {
+    text-align: center;
+  }
+  
+  .smm__reviews-slider-slide-border {
+    margin: 0 auto 14px auto;
+  }
+  
+  .smm__reviews-slider-slide-headline {
+    &::before {
+      top: -110px;
+      left: 0;
+      right: 0;
+      
+      margin: auto;
+    }
+  }
 }
