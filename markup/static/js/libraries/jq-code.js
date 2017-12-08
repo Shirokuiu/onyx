@@ -307,6 +307,7 @@ $(function () {
   
   smmPriceCartBlockMoreText.on('click', function () {
     $(this).toggleClass('smm__price-cart-blockMore--clicked');
+    $(this).parent().parent().toggleClass('smm__price-cart--mobileOpen');
     
     if ($(this).hasClass('smm__price-cart-blockMore--clicked')) {
       $(this).html('<p class="smm__price-cart-blockMore-text">Свернуть</p>')
@@ -317,5 +318,17 @@ $(function () {
     }
     
     $(this).parent().parent().find('.smm__price-cart-blockMore-accordionWrap').toggleClass('smm__price-cart-blockMore-accordionWrap--visible');
+  });
+  
+  var featuresBlockSmm = $('.features__block--smm');
+  
+  featuresBlockSmm.on('click', function () {
+    location.href = 'case-smm.html';
+  });
+  
+  var featuresBlockSeo = $('.features__block--seo');
+  
+  featuresBlockSeo.on('click', function () {
+    location.href = 'case-seo.html';
   });
 });

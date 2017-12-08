@@ -48,7 +48,7 @@
       </header>
       <main class="page-content">
        
-        <div class="smm">
+        <div class="smm smm--iphone">
           <div class="container">
             <h2 class="seo__headline seo__headline--smm">Приемущества SMM <span>продвижения</span></h2>
             <div class="smm__featuresBlocksWrap">
@@ -67,7 +67,10 @@
                 </div>
               </div>
               <div class="smm__featuresBlock smm__featuresBlock--img smm__featuresBlock--mobileOrder1">
-                <img src="%=static=%img/content/smm-featires-iphone.png" alt="Iphone">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="%=static=%img/content/smm-featires-iphone-mobile.png">
+                  <img src="%=static=%img/content/smm-featires-iphone.png" alt="Iphone">
+                </picture>
                 <div class="smm__featuresBlock-heart"></div>
                 <div class="smm__featuresBlock-like"></div>
               </div>
@@ -93,8 +96,8 @@
           <div class="seo">
             <div class="container">
               <h2 class="seo__headline">Что включает в себя SMM</h2>
-            </div>
-            <div class="seo__features">
+            </div> 
+            <div class="seo__features seo__features--smm">
               <div class="container">
                 <div class="seo__features-block seo__features-block--smmWidth">
                   <div class="seo__features-block-content">
