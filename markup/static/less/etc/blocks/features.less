@@ -6,7 +6,7 @@
   background-image: url(%=static=%content/seo-features-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: 0px 388px;
   .container {
     display: flex;
     flex-direction: column;
@@ -48,6 +48,26 @@
   
   background-color: #fff;
   box-shadow: 3px 2px 8px 3px rgba(0, 0, 0, 0.03);
+  
+  cursor: pointer;
+  
+  transition: 0.3s ease;
+  &:hover {
+    box-shadow: 3px 51px 75px -20px rgba(0, 0, 0, 0.3);
+  }
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 30px;
+    right: 26px;
+    
+    width: 18px;
+    height: 14px;
+    
+    background-image: url(%=static=%content/features-block-arrow.svg);
+    background-repeat: no-repeat;
+  }
   &--disabled {
     opacity: 0.3;
     .features__blockHeadline {
