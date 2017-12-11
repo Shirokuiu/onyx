@@ -331,4 +331,16 @@ $(function () {
   featuresBlockSeo.on('click', function () {
     location.href = 'case-seo.html';
   });
+  
+  var featuresBlockMarketing = $('.features__block--marketing');
+  
+  featuresBlockMarketing.on('click', function () {
+    location.href = 'case-marketing.html';
+  });
+  
+  var featuresBlockWebDesign = $('.features__block--webDesign');
+  
+  featuresBlockWebDesign.on('click', function () {
+    location.href = 'case-webDesign.html';
+  });
 });

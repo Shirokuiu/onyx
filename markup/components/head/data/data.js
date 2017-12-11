@@ -5,6 +5,18 @@ head: {
         indexMeta: true,
         caseMeta: false
     },
+    'marketing': {
+      title: 'Контент маркетинг',
+      useSocialMetaTags: true,
+      indexMeta: false,
+      caseMeta: true
+    },
+    'webDesign': {
+      title: 'Веб дизайн',
+      useSocialMetaTags: true,
+      indexMeta: false,
+      caseMeta: true
+    },
     'smm': {
       title: 'SMM',
       useSocialMetaTags: true,
