@@ -11,7 +11,7 @@
 .content-marketing__about-block {
   &--content {
     width: 500px;
-    margin-right: 115px;
+    margin-right: 167px;
   }
   &--img {
     width: 465px;
@@ -98,10 +98,7 @@
 }
 
 .content-marketing__features-block-content {
-  margin-bottom: 195px;
-  &:last-child {
-    margin-bottom: 0;
-  }
+  padding-bottom: 195px;
 }
 
 .content-marketing__features-block-content-headline {
@@ -203,6 +200,8 @@
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.03);
   border-radius: 4px 4px 0 0;
   h2 {
+    .reset();
+    
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -229,6 +228,155 @@
     line-height: 16px;
     &:last-child {
       transform: translateX(-95px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content-marketing__about {
+    padding-top: 32px;
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  .content-marketing__about-block {
+    width: auto;
+    &--content {
+      order: 1;
+      margin-right: 0;
+      margin-bottom: 29px;
+    }
+    &--img {
+      order: 2;
+    }
+  }
+  
+  .content-marketing__features {
+    padding-top: 27px;
+  }
+  
+  .content-marketing__about-block-headline {
+    margin-bottom: 12px;
+    
+    line-height: 28px;
+  }
+  
+  .content-marketing__features {
+    padding-bottom: 29px;
+    
+    background-image: none;
+  }
+  
+  .content-marketing__features-headline {
+    margin-bottom: 65px;
+    
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 41px;
+  }
+  
+  .content-marketing__features-blocksWrap {
+    flex-direction: column;
+  }
+  
+  .content-marketing__features-block {
+    width: auto;
+    &--textAlignRight {
+      margin-bottom: 195px;
+      .content-marketing__features-block-content-headline {
+        text-align: center;
+      }
+      .content-marketing__features-block-content-text {
+        text-align: center;
+      }
+    }
+    &--line {
+      display: none;
+    }
+    &--content {
+      margin-bottom: 0;
+      
+      text-align: center;
+    }
+    &--positionRelative {
+      position: static;
+    }
+  }
+  
+  .content-marketing__features-block-content {
+    background-image: url(%=static=%content/content-marketing__features-block-content-mobileIcon.png);
+    background-repeat: no-repeat;
+    background-position: center 190px;
+    &--mobilePadding {
+      padding-bottom: 0;
+      
+      background-image: none;
+    }
+  }
+  
+  .content-marketing__price {
+    padding-top: 30px;
+    padding-bottom: 0;
+    .container {
+      padding: 0;
+    }
+  }
+
+  .content-marketing__price-headline {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 41px;
+  }
+  
+  .content-marketing__price-title {
+    margin-bottom: 27px;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  
+  .content-marketing__price-listsWrap {
+    flex-direction: column;
+  }
+  
+  .content-marketing__price-list {
+    width: auto;
+  }
+  
+  .content-marketing__price-list-itemWrap {
+    padding-top: 21px;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    padding-bottom: 21px;
+    h2 {
+      width: 130px;
+      
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      &:last-child {
+        text-align: right;
+      }
+    }
+    &--mobileHidden {
+      display: none;
+    }
+  }
+  
+  .content-marketing__price-listLanguages {
+    margin: 0;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+  }
+  
+  .content-marketing__price-listLanguages-items {
+    border-bottom: none;
+    p {
+      &:last-child {
+        transform: translateX(0);
+      }
     }
   }
 }

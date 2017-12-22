@@ -343,4 +343,16 @@ $(function () {
   featuresBlockWebDesign.on('click', function () {
     location.href = 'case-webDesign.html';
   });
+  
+  var featuresBlockBrending = $('.features__block--brending');
+  
+  featuresBlockBrending.on('click', function () {
+    location.href = 'case-brending.html';
+  });
+	
+	var featuresBlockIllustration = $('.features__block--illustration');
+	
+	featuresBlockIllustration.on('click', function () {
+		location.href = 'case-illustration-cart.html'
+	});
 });

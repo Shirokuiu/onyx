@@ -1,3 +1,7 @@
+.web-design {
+  margin-bottom: 78px;
+}
+
 .web-design__features {
   padding-top: 100px;
   padding-bottom: 70px;
@@ -88,4 +92,31 @@
   font-weight: 300;
   color: #000000;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .web-design {
+    margin-bottom: 27px;
+  }
+  
+  .web-design__features {
+    padding-top: 40px;
+    padding-bottom: 29px;
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  .web-design__features-block {
+    width: auto;
+    min-height: auto;
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .web-design__features-block-headline {
+    margin-top: 95px;
+  }
 }
